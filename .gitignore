@@ -4,10 +4,8 @@
 node_modules
 
 # Builded stuff
-site/scripts
-site/styles
-/cache/*
-dist
+site/scripts/**/*
+site/styles/**/*
 
 # IDE
 *.sublime*
