@@ -1,0 +1,30 @@
+{
+  "name": "tagly",
+  "version": "1.0.0",
+  "description": "Service de tagging simplifié",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laink/tagly.git"
+  },
+  "author": "Tagly Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laink/tagly/issues"
+  },
+  "homepage": "https://github.com/Laink/tagly#readme",
+  "devDependencies": {
+    "browser-sync": "^2.7.10",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.11.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "jshint-stylish": "^2.0.0"
+  }
+}

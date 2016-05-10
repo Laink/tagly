@@ -1,0 +1,25 @@
+.sass-cache/
+
+# Dependencies
+node_modules
+
+# Builded stuff
+site/scripts
+site/styles
+/cache/*
+dist
+
+# IDE
+*.sublime*
+.settings
+.idea
+/.project
+
+# System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
