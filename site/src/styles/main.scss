@@ -1,7 +1,7 @@
 @import "compass";
 @import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Poppins:700);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
 @mixin font-smoothing($value: antialiased) {
   -webkit-font-smoothing: $value;
@@ -9,5 +9,9 @@
   -ms-font-smoothing: $value;
   font-smoothing: $value;
 }
+
+$colorBlack : #333;
+$colorBlue : #1768ea;
+$colorBlueContrast : #1049a4;
 
 @import "desktop";

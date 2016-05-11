@@ -6,11 +6,74 @@
     <link href="styles/main.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <title>Tagly Géréec</title>
 </head>
 
 <body>
-	<h1>Hello world</h1>
-	<p>Content</p>
+
+<!--
+	<h1 class="display2">Display 2</h1>
+	<h2 class="display1">Display 1</h2>
+	<h3 class="headline2">Headline 2</h3>
+	<h4 class="headline1">Headline 1</h4>
+	<h5 class="title2">Title 2</h5>
+	<h6 class="title1">Title 1</h6>
+	<ul>
+	  <li class="menuItem">item menu</li>
+	  <li class="menuItem">item menu</li>
+	</ul>
+	<p class="caption">Caption</p>
+	<a href="" class="button">
+	  Button
+	</a>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum bibendum eros vitae finibus. Nam ut ullamcorper quam. Vestibulum diam ante.</p>
+	<p class="opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum bibendum eros vitae finibus. Nam ut ullamcorper quam. Vestibulum diam ante.</p>
+	
+-->
+  <div class="main">
+	  <div class="section section--left">
+       <div class="stepTracker">
+        <p class="caption">1/2</p>
+         <span class="loader loader--demi"></span>
+       </div>
+        <div class="container">
+          <h1 class="display2">Create a New Tagging Project.</h1>
+          <p class="headline1">To get started, give your new project a name and a root URL.</p>
+        </div>
+	  </div><!--
+	  --><div class="section section--right">
+	    <h2 class="title2">New project</h2>
+	    <form action="#">
+         <div class="formGroup">
+          <label for="project-name" class="caption">Project Name</label>
+          <input type="text" id="project-name" name="project-name" placeholder="Product Rental Page">
+        </div>
+        <div class="formGroup">
+          <label for="project-url" class="caption">Project URL</label>
+          <input type="text" id="project-url" name="project-url" placeholder="Click here to add a template URL">
+        </div>
+        <div class="formGroup">
+          <h3 class="headline1">Does your project fit into one or several of these categories ?</h3>
+          <input class="project-type" type="radio" name="project-type" id="project-type-ecommerce" value="project-type-ecommerce">
+          <label class="project-typeLabel" for="project-type-ecommerce">
+            <span class="icon">🛍</span>
+            <p class="caption">E-Commerce</p>
+          </label>
+          <input class="project-type" type="radio" name="project-type" id="project-type-social" value="project-type-social">
+          <label class="project-typeLabel" for="project-type-social">
+            <span class="icon">👥</span>
+            <p class="caption">Social</p>
+          </label>
+          <input class="project-type" type="radio" name="project-type" id="project-type-nope" value="project-type-nope">
+          <label class="project-typeLabel" for="project-type-nope">
+            <span class="icon">🙃</span>
+            <p class="caption">Else</p>
+          </label>
+        </div>          
+	    </form>
+	  </div>
+	</div>
+	
 </body>
 
 </html>
