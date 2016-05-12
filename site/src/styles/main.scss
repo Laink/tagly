@@ -1,7 +1,8 @@
 @import "compass";
 @import "compass/css3";
+@import url(//cdn.materialdesignicons.com/1.5.54/css/materialdesignicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Poppins:700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
 
 @mixin font-smoothing($value: antialiased) {
   -webkit-font-smoothing: $value;
@@ -10,8 +11,9 @@
   font-smoothing: $value;
 }
 
-$colorBlack : #333;
+$colorBlack : #2e3b42;
 $colorBlue : #1768ea;
 $colorBlueContrast : #1049a4;
+$colorBlueButton : #00c7ff;
 
 @import "desktop";
