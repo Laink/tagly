@@ -51,12 +51,16 @@ html {
 }
 
 .menuItem1{
+  text-decoration: none;
+  color: $colorBlack;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   list-style: none;
 }
 .menuItem2{
+  text-decoration: none;
+  color: $colorBlack;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -73,6 +77,18 @@ html {
 
 .opacity{
   opacity: 0.6;
+}
+
+button{
+  border: 0;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  cursor: pointer;
+}
+
+button:focus{
+// outline: none;
 }
 
 .button{
@@ -117,6 +133,12 @@ html {
   right: 80px;;
 }
 
+.fab--topLeft{
+  position: absolute;
+  top: 30px;
+  left: 30px;;
+}
+
 .fab i{
   font-size: 24px;
   line-height: 56px;
@@ -139,7 +161,6 @@ h6 {
 }
 
 .section{
-  width: 50%;
   height: 100vh;
   display: inline-block;
   vertical-align: top;
@@ -147,6 +168,7 @@ h6 {
 }
 
 .section--left{
+  width: 50%;
   background-color: $colorBlue;
   .display2,
   .display1,
@@ -170,8 +192,22 @@ h6 {
 }
 
 .section--right{
+  width: 50%;
   padding: 80px;
 }
+
+.section--nav{
+  padding: 80px;
+  width: 25%;
+  border-right: 1px solid $colorGreyLight;
+  position: fixed;
+}
+.section--content{
+  padding: 80px;
+  width: 75%;
+  margin-left: 25%;
+}
+
 
 .stepTracker{
   position: absolute;
@@ -190,6 +226,7 @@ h6 {
   background: $colorBlueContrast;
   border-radius: 10px;
 }
+
 .loader::after{
   content: '';
   display: block;
@@ -197,6 +234,14 @@ h6 {
   width: 50%;
   background: #fff;
   border-radius: 10px;
+}
+
+.loader--full{
+  background: #fff;
+}
+
+.loader--full::after{
+  content: none;
 }
 
 .formGroup{
@@ -261,18 +306,178 @@ input:focus ~ .formLabel{
 .project-type{
   display: none;
 }
+
 .project-type:checked + .project-typeLabel .icon{
   border-color: $colorBlue;
   background-color: $colorBlue;
   transition: all 0.2s ease-out;
 }
+
 .project-type:checked + .project-typeLabel .caption{
   color: $colorBlue;
   opacity: 1;
   transition: all 0.2s ease-out;
 }
+
 .project-type:checked + .project-typeLabel .icon i{
   color: #fff;
   opacity: 1;
   transition: all 0.2s ease-out;
+}
+
+/* step 2 */
+.subHeadline{
+  color: #fff;
+  opacity: 0.4;
+  margin-top: 30px;
+}
+
+.templatesListWrapper{
+  margin-top: 20px;
+}
+.templatesList{
+  font-size: 0;
+}
+.templatesListItem{
+  width: 146px;
+  height:  134px;
+  list-style: none;
+  border: 1px solid $colorGreyLight;
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px 16px 0 0;
+  border-radius: 4px;
+}
+
+  .templatesListItem--tall{
+    width: 212px;
+    height: 192px;
+    margin: 24px 24px 0 0;
+  }
+
+.templatesListImage{
+  
+}
+
+.templatesListLabel{
+  padding-left: 10px;
+}
+
+.templatesListName{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: $colorBlack;
+  line-height: 40px;
+}
+
+  .templatesListItem--tall .templatesListName{
+    margin-top: 8px;
+    line-height: normal;
+  }
+  .templatesListItem--tall .caption{
+    line-height: 18px;
+  }
+
+.nav-listItem{
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.nav-listItem i{
+  margin-left: 3px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.nav-reminder{
+  padding-top: 10px;
+  border-top: 1px solid $colorGreyLight;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+.nav-reminder-thumb{
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+}
+.nav-reminder-content{
+  vertical-align: middle;
+  display: inline-block;
+  width: 200px;
+  padding-left: 5px;
+}
+
+.titleBlock{
+  position: relative;
+}
+
+.titleBlock-nav{
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.titleBlock-nav i{
+  font-size: 25px;
+}
+
+.caption.alert{
+  color:red;
+}
+
+.caption.alert::before{
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  background: red;
+  border-radius: 100%;
+  content: '';
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+}
+
+.templatesList--list {
+  .templatesListItem{
+    display: table;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid $colorGreyLight;
+    height: auto;
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+  .templatesListImage{
+    width: 120px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .templatesListLabel{
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 87%;
+    .templatesListName{
+      margin-top: 0;
+    }
+  }
+  .caption.alert::before{
+    margin-left: -15px;
+  }
+}
+.caption.status{
+  opacity: 1;
+}
+
+.templatesListStatus{
+  display: table-cell;
+  vertical-align: middle;
+  width: 13%;
 }
