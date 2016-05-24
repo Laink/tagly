@@ -12,6 +12,11 @@ html {
   }
 }
 
+.u-hidden{
+  display: none;
+  margin: 0;
+}
+
 .display2 {
   font-size: 48px;
   line-height: 50px;
@@ -174,12 +179,17 @@ h6 {
   .display1,
   .headline2,
   .headline1,
+  .subHeadline,
   .title2,
   .title1,
   .menuItem,
   .caption,
   .button {
     color: white;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container{
@@ -250,6 +260,14 @@ h6 {
 
 .formLabel{
   display: block;
+}
+
+.editIcon{
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.4;
 }
 
 input{
@@ -337,6 +355,7 @@ input:focus ~ .formLabel{
 }
 .templatesList{
   font-size: 0;
+  margin-top: 30px;
 }
 .templatesListItem{
   width: 146px;
@@ -345,14 +364,14 @@ input:focus ~ .formLabel{
   border: 1px solid $colorGreyLight;
   display: inline-block;
   vertical-align: top;
-  margin: 16px 16px 0 0;
+  margin: 0 16px 16px 0;
   border-radius: 4px;
 }
 
   .templatesListItem--tall{
     width: 212px;
     height: 192px;
-    margin: 24px 24px 0 0;
+    margin: 0 24px 24px 0;
   }
 
 .templatesListImage{
@@ -455,9 +474,9 @@ input:focus ~ .formLabel{
       display: none;
     }
   
-  .templatesListItem--alert{
-    border: 1px solid red;
-  }
+//  .templatesListItem--alert{
+//    border: 1px solid red;
+//  }
 }
 
 
