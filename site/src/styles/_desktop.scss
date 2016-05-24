@@ -425,13 +425,14 @@ input:focus ~ .formLabel{
 
 .titleBlock-nav i{
   font-size: 25px;
+  cursor: pointer;
 }
 
-.caption.alert{
+.statusName--alert{
   color:red;
 }
 
-.caption.alert::before{
+.statusName--alert::before{
   display: inline-block;
   height: 6px;
   width: 6px;
@@ -442,6 +443,23 @@ input:focus ~ .formLabel{
   position: relative;
   top: -1px;
 }
+
+.templatesList--grid {
+    .statusLabel{ 
+      display: none;
+    }
+    .statusName{
+      margin-left: 10px;
+    }
+    .statusName:not(.statusName--alert){
+      display: none;
+    }
+  
+  .templatesListItem--alert{
+    border: 1px solid red;
+  }
+}
+
 
 .templatesList--list {
   .templatesListItem{
@@ -468,11 +486,11 @@ input:focus ~ .formLabel{
       margin-top: 0;
     }
   }
-  .caption.alert::before{
+  .statusName--alert::before{
     margin-left: -15px;
   }
 }
-.caption.status{
+.caption.statusName{
   opacity: 1;
 }
 

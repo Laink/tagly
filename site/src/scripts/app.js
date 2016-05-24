@@ -8,12 +8,12 @@ $(function() {
   
   $('.js-ListDisplay').click(function(e){
     if ($(this).hasClass('js-ListDisplay--list')){
-      $('.templatesList').addClass('templatesList--list');
+      $('.templatesList').addClass('templatesList--list').removeClass('templatesList--grid');
       $('.js-ListDisplay').addClass('opacity');
       $(this).removeClass('opacity');
     }
-    else{
-      $('.templatesList').removeClass('templatesList--list');
+    else if ($(this).hasClass('js-ListDisplay--grid')){
+      $('.templatesList').addClass('templatesList--grid').removeClass('templatesList--list');
       $('.js-ListDisplay').addClass('opacity');
       $(this).removeClass('opacity');
     }
