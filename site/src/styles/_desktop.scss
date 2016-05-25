@@ -12,10 +12,10 @@ html {
   }
 }
 
-.u-hidden{
-  display: none;
-  margin: 0;
-}
+//.step2 #project-name{
+//  display: none;
+//  margin: 0;
+//}
 
 .display2 {
   font-size: 48px;
@@ -165,6 +165,11 @@ h6 {
 .main{
 }
 
+.u-hidden{
+  opacity: 0!important;
+  transition: opacity 0.2s ease-out;
+}
+
 .section{
   height: 100vh;
   display: inline-block;
@@ -268,8 +273,12 @@ h6 {
   display: inline-block;
   vertical-align: middle;
   opacity: 0.4;
+  transition: 0.2s ease-out;
 }
-
+#project-name{
+  display: inline-block;
+  vertical-align: middle;
+}
 input{
 //  display: block;
   margin-top: 5px;
@@ -288,6 +297,22 @@ input:focus{
 input:focus ~ .formLabel{
   color: $colorBlue;
   opacity: 1;
+}
+
+::-webkit-input-placeholder {
+   opacity: 1;
+  transition: all 0.1s ease-out;
+}
+
+input:focus::-webkit-input-placeholder {
+   opacity: 0;
+  transition: all 0.1s ease-out;
+}
+
+label.focused{
+  color: $colorBlue;
+  opacity: 1;
+  transition: all 0.2s ease-out;
 }
 
 .project-typeLabel{
