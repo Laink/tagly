@@ -71,6 +71,12 @@ html {
   font-weight: 300;
   list-style: none;
   opacity: 0.4;
+  transition: opacity 0.2s ease-out;
+}
+
+.menuItem2:hover{
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
 }
 
 .caption{
@@ -138,7 +144,7 @@ button:focus{
 }
 
 .fab--bottomRight{
-  position: absolute;
+  position: fixed;
   bottom:80px;
   right: 80px;;
 }
@@ -179,7 +185,7 @@ h6 {
   height: 100vh;
   display: inline-block;
   vertical-align: top;
-  position: relative;
+  position: fixed;
 }
 
 .section--left{
@@ -212,6 +218,8 @@ h6 {
 }
 
 .section--right{
+  right: 0;
+  overflow-y: scroll;
   width: 50%;
   padding: 80px;
 }
@@ -219,6 +227,7 @@ h6 {
 .section--nav{
   padding: 80px;
   width: 25%;
+  width: 308px;
   border-right: 1px solid $colorGreyLight;
   position: fixed;
 }
@@ -226,7 +235,15 @@ h6 {
   padding: 80px;
 //  width: 75%;
   width: 860px;
-  margin-left: 25%;
+//  margin-left: 25%;
+  position: fixed;
+  overflow-y: scroll;
+  right: 0;
+  width: calc(100% - 308px);
+    .contentWrapper{
+      max-width: 700px;
+      margin: 0 auto;
+    }
 }
 
 
@@ -453,7 +470,8 @@ label.focused{
   bottom: 0;
   left: 0;
   width: 25%;
-  padding-left: 80px;
+  width: 308px;
+  padding-left: 12px;
   margin-bottom: 15px;
 }
 .nav-reminder-thumb{
@@ -479,12 +497,23 @@ label.focused{
   right: 0;
 }
 
-.titleBlock-nav i{
+.displaySwitch{
   font-size: 25px;
   cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s ease-out;
 }
 
-.titleBlock-nav i:first-child{
+.displaySwitch--selected{
+  opacity: 1;
+}
+
+.displaySwitch:hover{
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.displaySwitch:first-child{
   margin-right: 10px;
 }
 

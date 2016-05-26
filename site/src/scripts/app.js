@@ -40,13 +40,13 @@ $(function() {
   $('.js-ListDisplay').click(function(e){
     if ($(this).hasClass('js-ListDisplay--list')){
       $('.templatesList').addClass('templatesList--list').removeClass('templatesList--grid');
-      $('.js-ListDisplay').addClass('opacity');
-      $(this).removeClass('opacity');
+      $('.js-ListDisplay').removeClass('displaySwitch--selected');
+      $(this).addClass('displaySwitch--selected');
     }
     else if ($(this).hasClass('js-ListDisplay--grid')){
       $('.templatesList').addClass('templatesList--grid').removeClass('templatesList--list');
-      $('.js-ListDisplay').addClass('opacity');
-      $(this).removeClass('opacity');
+      $('.js-ListDisplay').removeClass('displaySwitch--selected');
+      $(this).addClass('displaySwitch--selected');
     }
   });
   
