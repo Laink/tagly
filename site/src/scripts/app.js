@@ -4,6 +4,8 @@ $(function() {
   /*TODO paste button */
   $('.js-pasteButton').click(function(e){
     console.log("MAIS PASTE MOI !");
+    $('.js-pasteInput').val("http://asos.com");
+    $('.js-pasteInput').focus();
     return false;
   });
   
