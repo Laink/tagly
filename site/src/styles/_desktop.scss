@@ -121,6 +121,11 @@ button:focus{
   width: 56px;
   border-radius: 100%;
   text-align: center;
+  transition: all 0.2s ease-out;
+}
+.fab:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
 }
 
 .fab--plain{
@@ -219,7 +224,8 @@ h6 {
 }
 .section--content{
   padding: 80px;
-  width: 75%;
+//  width: 75%;
+  width: 860px;
   margin-left: 25%;
 }
 
@@ -230,6 +236,7 @@ h6 {
   right: 40px;
   .caption{
     opacity: 1;
+    text-align: left;
   }
 }
 
@@ -375,6 +382,10 @@ label.focused{
   margin-top: 30px;
 }
 
+.add-template-button{
+  margin-top: 30px;
+}
+
 .templatesListWrapper{
   margin-top: 20px;
 }
@@ -449,6 +460,7 @@ label.focused{
   vertical-align: middle;
   display: inline-block;
   width: 40px;
+  border-radius: 3px;
 }
 .nav-reminder-content{
   vertical-align: middle;
@@ -472,6 +484,11 @@ label.focused{
   cursor: pointer;
 }
 
+.titleBlock-nav i:first-child{
+  margin-right: 10px;
+}
+
+
 .statusName--alert{
   color:red;
 }
@@ -489,6 +506,9 @@ label.focused{
 }
 
 .templatesList--grid {
+    .templatesListItem:nth-child(3n+3){
+      margin-right: 0;
+    }
     .statusLabel{ 
       display: none;
     }
