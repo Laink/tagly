@@ -1,15 +1,36 @@
 $(function() {
-	console.log('test');
-  
-  /*TODO paste button */
-  $('.js-pasteButton').click(function(e){
+	console.log('Hello Tagy Gérec');
+  /* */
+  /* paste buttons */
+  $('.js-pasteButton--project').click(function(){
     console.log("MAIS PASTE MOI !");
     $('.js-pasteInput').val("http://asos.com");
     $('.js-pasteInput').focus();
-    return false;
   });
   
+  $('.js-pasteButton--page').click(function(){
+    console.log("MAIS PASTE MOI !");
+    $('.js-pasteInput').val("http://asos/product.com");
+    $('.js-pasteInput').focus();
+  });
+  
+  $('#project-url').focus(function(){
+    $('.js-pasteButton--project').removeClass('u-hidden');
+  });
+  $('#project-url').blur(function(){
+    $('.js-pasteButton--project').addClass('u-hidden');
+  });
+  
+  $('#page-url').focus(function(){
+    $('.js-pasteButton--page').removeClass('u-hidden');
+  });
+  $('#page-url').blur(function(){
+    $('.js-pasteButton--page').addClass('u-hidden');
+  });
+  
+  /* */
   /* edit project name button */
+  /* */
   $('.js-editIcon').click(function(){
     /* empty the field to prevent cursor to be at the beginning of the field */
     var temp = $('#project-name').val();
@@ -26,13 +47,10 @@ $(function() {
   
   $('#project-name').blur(function(){
     $('.js-editIcon').removeClass('u-hidden');
-    if($(this).val()!==""){
-      $('.js-pasteButton').removeClass('u-hidden');
-    }else{
-      $('.js-pasteButton').addClass('u-hidden');
-    }
   });
   
+  /* */
+  /* change label color on input focus */
   $('input').focus(function(){
     $(this).closest('.formGroup').find('label').addClass('focused');
   });

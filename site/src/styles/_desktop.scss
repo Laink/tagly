@@ -98,6 +98,10 @@ button{
   cursor: pointer;
 }
 
+.button.u-hidden{
+  cursor: default;
+}
+
 button:focus{
 // outline: none;
 }
@@ -112,6 +116,7 @@ button:focus{
   line-height: 36px;
   padding: 0 34px;
   color: $colorBlack;
+  background-color: transparent;
 }
 
 .button--plain{
@@ -281,6 +286,10 @@ h6 {
 
 .loader--full::after{
   content: none;
+}
+
+.formGroup:first-child{
+  margin-top: 0;
 }
 
 .formGroup{
