@@ -26,6 +26,11 @@ $(function() {
   
   $('#project-name').blur(function(){
     $('.js-editIcon').removeClass('u-hidden');
+    if($(this).val()!==""){
+      $('.js-pasteButton').removeClass('u-hidden');
+    }else{
+      $('.js-pasteButton').addClass('u-hidden');
+    }
   });
   
   $('input').focus(function(){
