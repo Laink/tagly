@@ -74,5 +74,12 @@ $(function() {
       $(this).addClass('displaySwitch--selected');
     }
   });
-  
+
+  $(function() {
+    $('.iframe-loader span').animate({
+        width: '100%'
+      }, 2000, function() {
+        $(this).parent().parent().fadeOut();
+    });
+  }); 
 });

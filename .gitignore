@@ -4,7 +4,8 @@
 node_modules
 
 # Builded stuff
-site/scripts/**/*
+site/scripts/vendor/*
+site/scripts/main.js
 site/styles/**/*
 
 # IDE
