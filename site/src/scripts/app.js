@@ -75,4 +75,13 @@ $(function() {
     }
   });
   
+  /* select */
+  $('.js-add-template').click(function(){
+    var value= $("#template-type").find(":selected").text();
+    var item = "<li class=\"templatesListItem\"> <img src=\"http://fakeimg.pl/144x90/\" class=\"templatesListImage\"><div class=\"templatesListLabel\"><p class=\"templatesListName\">"+value+"</p></div></li>";
+    $('.templatesList').append(item);
+    $('#page-url').val('');
+    return false;
+  });
+  
 });
