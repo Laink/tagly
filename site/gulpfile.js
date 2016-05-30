@@ -54,6 +54,6 @@ gulp.task('serve', ['styles', 'scripts'], function() {
     });
  
   gulp.watch(SCSS_DIR + '**/*.scss', ['styles', reload]);
-  gulp.watch(JS_DIR + '**/*.js', ['scripts']);
+  gulp.watch(ASSETS_DIR + 'src/scripts/' + '**/*.js', ['scripts']);
   gulp.watch('**/*.html', reload);
 });
