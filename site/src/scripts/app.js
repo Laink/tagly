@@ -98,6 +98,8 @@ $(function() {
     var item = "<li class=\"templatesListItem\"> <img src=\"http://fakeimg.pl/144x90/\" class=\"templatesListImage\"><div class=\"templatesListLabel\"><p class=\"templatesListName\">"+value+"</p></div></li>";
     $('.templatesList').append(item);
     $('#page-url').val('');
+    $('.select-labelTxt').text('Select a template type');
+    $('.js-select').removeClass('select--chosen');
     return false;
   });
   
