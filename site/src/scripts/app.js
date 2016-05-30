@@ -76,8 +76,25 @@ $(function() {
   });
   
   /* select */
+  
+  $('.js-select-label').click(function(){
+    $('.js-select').toggleClass('select--opened');
+  });
+  
+  $('.js-select-close').click(function(e){
+    e.stopPropagation();
+    $('.js-select').removeClass('select--opened');
+  });
+  $('.select-option').click(function(e){
+    var res = $(e.target).text();
+    console.log(res);
+    $('.select-labelTxt').text(res);
+    $('.js-select').addClass('select--chosen');
+    $('.js-select').removeClass('select--opened');
+  });
+  
   $('.js-add-template').click(function(){
-    var value= $("#template-type").find(":selected").text();
+    var value=  $('.select-labelTxt').text();
     var item = "<li class=\"templatesListItem\"> <img src=\"http://fakeimg.pl/144x90/\" class=\"templatesListImage\"><div class=\"templatesListLabel\"><p class=\"templatesListName\">"+value+"</p></div></li>";
     $('.templatesList').append(item);
     $('#page-url').val('');

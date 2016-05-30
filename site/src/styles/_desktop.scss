@@ -322,11 +322,6 @@ input:focus{
   outline: none;
 }
 
-input:focus ~ .formLabel{
-  color: $colorBlue;
-  opacity: 1;
-}
-
 ::-webkit-input-placeholder {
    opacity: 1;
   transition: all 0.1s ease-out;
@@ -813,7 +808,7 @@ label.focused{
 }
 .illu-sheets .stars img:nth-child(4){
   width: 30px;
-  left: 145px;
+  left: 160px;
   top: 0;
   animation-delay: 1.1s;
 }
@@ -828,5 +823,99 @@ label.focused{
   right: 0;
   top: 95px;
   animation-delay: 2.1s;
+}
+
+.select{
+  position: relative;
+  left: -20px;
+}
+
+.select .caption{
+//  color: $colorBlue;
+//  opacity: 1;
+}
+
+.select-label{
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.select-labelTxt{
+  color: $colorBlack;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.select-label .mdi-close{
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  font-size: 24px;
+  color: $colorBlueButton;
+  display: none;
+  cursor: pointer;
+}
+
+.select-label .mdi-chevron-down{
+  position: absolute;
+  left: 200px;
+  top: 36px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.select-options{
+  display: none;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+.select-option{
+  color: $colorBlack;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.select-option--cat{
+  color: $colorGreyLight;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.select--opened{
+  box-shadow: 0px 0px 6px #aaa;
+  border-radius: 5px;
+  
+  .mdi-close{
+    display: block;
+  }
+  .select-options{
+    display: block;
+  }
+  .select-label{
+    border-bottom: 1px solid #ccc;
+  }
+  .mdi-chevron-down{
+    display: none;
+  }
+  
+  .caption{
+    color: $colorBlue;
+    opacity: 1;
+  }
+
+}
+
+.select--chosen .mdi-chevron-down{
+  display: none;
 }
 
