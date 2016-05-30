@@ -3,6 +3,48 @@ html.tag {
 	body {
 		position: relative;
 		height: 100%;
+
+		.iframe-loader-container {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			.iframe-loader {
+				position: absolute;
+				width: 470px;
+				left: 0;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				margin: 0 auto;
+				font-family: 'Poppins', sans-serif;
+				font-size: 96px;
+				color: #e8f2fd;
+				letter-spacing: -8px;
+				span {
+					position: absolute;
+					color: #1678ea;
+					width: 0%;
+					overflow: hidden;
+					letter-spacing: -8px;
+				}
+			}
+			.loader-subtitle {
+				position: absolute;
+				width: 470px;
+				left: 0;
+				right: 0;
+				top: calc(50% + 90px);
+				margin: 0 auto;
+				transform: translateY(-50%);
+				text-align: center;
+				font-size: 28px;
+				color: #bfcee1;
+			}
+		}
 		iframe {
 			position: relative;
 			float: left;
