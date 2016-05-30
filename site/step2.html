@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <title>Tagly Géréec</title>
+</head>
+
+<body>
+  <div class="main step2">
+	  <div class="section section--left">
+        <a href="/" class="fab fab--outline fab--topLeft">
+          <i class="mdi mdi-arrow-left"></i>
+        </a>
+       <div class="stepTracker">
+        <p class="caption">2/2</p>
+         <span class="loader loader--full"></span>
+       </div>
+        <div class="container">
+          <h1 class="display2">Add the pages you want to tag.</h1>
+          <p class="headline1">Now add the template pages on which you want user beahviour later on</p>
+          <p class="subHeadline">You will be able to finish this later</p>
+        </div>
+	  </div><!--
+	  --><div class="section section--right">
+	    <form action="#">
+          <div class="formGroup">
+            <input class="headline2" type="text" id="project-name" name="project-name" placeholder="Project Name" value="Asos"><i class="mdi mdi-pencil editIcon js-editIcon"></i>
+          </div>
+          <div class="templatesListWrapper">
+          <ul class="templatesList">
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Homepage</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product List</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Description Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Shopping Cart</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Homepage</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product List</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Description Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Shopping Cart</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Homepage</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product List</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Description Page</p>
+              </div>
+            </li>
+            <li class="templatesListItem">
+              <img src="http://fakeimg.pl/144x90/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Shopping Cart</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+          <div class="formGroup">
+            <label for="template-type" class="formLabel caption">Template Type</label>
+            <select name="template-type" id="template-type">
+              <option value="template-type-HP">Homepage</option>
+              <option value="template-type-PL">Product List</option>
+              <option value="template-type-PP">Product Page</option>
+              <option value="template-type-DP">Description Page</option>
+              <option value="template-type-SC">Shopping Cart</option>
+            </select>
+          </div> 
+          <div class="formGroup">
+            <label for="page-url" class="formLabel caption">Page URL</label>
+            <input type="text" id="page-url" name="page-url"  class="js-pasteInput" placeholder="Click here to add a template URL" autocomplete="off">
+            <button type="button" class="button js-pasteButton--page u-hidden">
+              Paste URL
+            </button>
+          </div>
+          <button class="button button--plain add-template-button">Add</button>
+	    </form>
+	    <a href="./step3.html" class="fab fab--plain fab--bottomRight">
+          <i class="mdi mdi-check"></i>
+        </a>
+	  </div>
+	</div>
+	
+</body>
+
+</html>
