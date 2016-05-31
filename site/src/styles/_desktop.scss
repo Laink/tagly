@@ -98,7 +98,7 @@ button{
 }
 
 button:focus{
-// outline: none;
+ outline: none;
 }
 
 .button{
@@ -235,9 +235,7 @@ h6 {
 }
 .section--content{
   padding: 80px;
-//  width: 75%;
   width: 860px;
-//  margin-left: 25%;
   position: fixed;
   overflow-y: scroll;
   right: 0;
@@ -310,7 +308,6 @@ h6 {
   vertical-align: middle;
 }
 input{
-//  display: block;
   margin-top: 5px;
   width: 300px;
   border: 0;
@@ -322,16 +319,6 @@ input{
 
 input:focus{
   outline: none;
-}
-
-::-webkit-input-placeholder {
-   opacity: 1;
-  transition: all 0.1s ease-out;
-}
-
-input:focus::-webkit-input-placeholder {
-   opacity: 0;
-  transition: all 0.1s ease-out;
 }
 
 label.focused{
@@ -554,10 +541,6 @@ label.focused{
     .statusName:not(.statusName--alert){
       display: none;
     }
-  
-//  .templatesListItem--alert{
-//    border: 1px solid red;
-//  }
 }
 
 
@@ -838,11 +821,6 @@ label.focused{
   left: -20px;
   box-shadow: 0px 0px 6px transparent;
   transition: box-shadow 0.2s ease-out;
-}
-
-.select .caption{
-//  color: $colorBlue;
-//  opacity: 1;
 }
 
 .select-label{
