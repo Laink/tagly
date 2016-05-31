@@ -1,15 +1,12 @@
 $(function() {
-	console.log('Hello Tagy Gérec');
   /* */
   /* paste buttons */
   $('.js-pasteButton--project').click(function(){
-    console.log("MAIS PASTE MOI !");
     $('.js-pasteInput').val("http://asos.com");
     $('.js-pasteInput').focus();
   });
   
   $('.js-pasteButton--page').click(function(){
-    console.log("MAIS PASTE MOI !");
     $('.js-pasteInput').val("http://asos/product.com");
     $('.js-pasteInput').focus();
   });
