@@ -146,7 +146,8 @@ button:focus{
 .fab--bottomRight{
   position: fixed;
   bottom:80px;
-  right: 80px;;
+  right: 80px;
+  z-index: 100;
 }
 
 .fab--topLeft{
@@ -450,6 +451,11 @@ label.focused{
   }
   .templatesListItem--tall .caption{
     line-height: 18px;
+  }
+
+  .templatesListItem--tall .templatesListImage{
+    width: 210px;
+    height: 140px;
   }
 
 .nav-listItem{
@@ -891,7 +897,6 @@ label.focused{
 }
 
 .select-option--cat{
-  color: $colorGreyLight;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 30px;
