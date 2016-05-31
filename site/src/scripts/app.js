@@ -45,6 +45,8 @@ $(function() {
     $('#project-name').focus();
   });
   
+  $('.project-name--index').trigger("focus");
+    
   $('#project-name').focus(function(){
     $('.js-editIcon').addClass('u-hidden');
   });
