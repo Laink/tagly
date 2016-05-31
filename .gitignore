@@ -6,7 +6,8 @@ node_modules
 # Builded stuff
 site/scripts/vendor/*
 site/scripts/main.js
-site/styles/**/*
+site/styles/main.css
+site/styles/main.css.map
 
 # IDE
 *.sublime*
