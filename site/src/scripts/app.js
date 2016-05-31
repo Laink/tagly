@@ -13,7 +13,6 @@ $(function() {
   });
   
   $('.js-pasteButton--page').click(function(){
-    console.log("MAIS PASTE ME !");
     $('.js-pasteInput').val(urls[count]);
     count++;
     $('.js-pasteInput').focus();
