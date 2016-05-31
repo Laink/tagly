@@ -1,16 +1,21 @@
 $(function() {
 	console.log('Hello Tagy Gérec');
+  
+  var urls =["asos.com/1.html", "asos.com/2.html", "asos.com/3.html", "asos.com/1.html", "asos.com/2.html", "asos.com/3.html"];
+  var images =["http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/", "http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/"];
+  var count = 0;
+  
   /* */
   /* paste buttons */
   $('.js-pasteButton--project').click(function(){
-    console.log("MAIS PASTE MOI !");
     $('.js-pasteInput').val("http://asos.com");
     $('.js-pasteInput').focus();
   });
   
   $('.js-pasteButton--page').click(function(){
-    console.log("MAIS PASTE MOI !");
-    $('.js-pasteInput').val("http://asos/product.com");
+    console.log("MAIS PASTE ME !");
+    $('.js-pasteInput').val(urls[count]);
+    count++;
     $('.js-pasteInput').focus();
   });
   
@@ -77,7 +82,8 @@ $(function() {
   
   /* select */
   
-  $('.js-select-label').click(function(){
+  $('.js-select-label').click(function(e){
+    e.stopPropagation();
     $('.js-select').toggleClass('select--opened');
   });
   
@@ -95,12 +101,16 @@ $(function() {
   
   $('.js-add-template').click(function(){
     var value=  $('.select-labelTxt').text();
-    var item = "<li class=\"templatesListItem\"> <img src=\"http://fakeimg.pl/144x90/\" class=\"templatesListImage\"><div class=\"templatesListLabel\"><p class=\"templatesListName\">"+value+"</p></div></li>";
+    var item = "<li class=\"templatesListItem\"> <img src=\""+images[count]+"\" class=\"templatesListImage\"><div class=\"templatesListLabel\"><p class=\"templatesListName\">"+value+"</p></div></li>";
     $('.templatesList').append(item);
     $('#page-url').val('');
     $('.select-labelTxt').text('Select a template type');
     $('.js-select').removeClass('select--chosen');
     return false;
+  });
+  
+  $('body').click(function(e){
+    $('.js-select').removeClass('select--opened');
   });
   
   $(function() {

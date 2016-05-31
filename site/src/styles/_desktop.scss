@@ -427,7 +427,8 @@ label.focused{
   }
 
 .templatesListImage{
-  
+  width: 144px;
+  height: 90px;
 }
 
 .templatesListLabel{
@@ -828,6 +829,8 @@ label.focused{
 .select{
   position: relative;
   left: -20px;
+  box-shadow: 0px 0px 6px transparent;
+  transition: box-shadow 0.2s ease-out;
 }
 
 .select .caption{
@@ -869,11 +872,13 @@ label.focused{
 
 .select-options{
   display: none;
-  padding: 20px;
+  padding: 10px 20px 0 20px;
   position: absolute;
   width: 100%;
   background: #fff;
   z-index: 10;
+  height: 210px;
+  overflow: scroll;
 }
 
 .select-option{
@@ -893,7 +898,9 @@ label.focused{
 
 .select--opened{
   box-shadow: 0px 0px 6px #aaa;
+  transition: box-shadow 0.2s ease-out;
   border-radius: 5px;
+  height: 295px;
   
   .mdi-close{
     display: block;
