@@ -308,6 +308,7 @@ h6 {
   transition: 0.2s ease-out;
 }
 #project-name{
+  width: 400px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -561,6 +562,7 @@ label.focused{
   }
   .templatesListImage{
     width: 120px;
+    height: 90px;
     display: table-cell;
     vertical-align: middle;
   }
@@ -675,7 +677,7 @@ label.focused{
   z-index: 3;
   animation-name: boxtop;
   animation-duration: 0.8s;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.35,.81,.47,.99);
 }
