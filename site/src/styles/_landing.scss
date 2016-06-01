@@ -1,5 +1,11 @@
 .landing{
   
+  .page{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 285px;
+  }
+  
   .fab--botCenter{
     position: absolute;
     bottom: 30px;
@@ -19,7 +25,176 @@
   }
   
   .top{
-    background: $colorBlue;
+    background: linear-gradient(to bottom,  #00489c 0%,#1678ea 100%);
     height: 100vh;
+  }
+  
+  .insight{ 
+    background: #fff;
+    .title1 + .title1{
+      margin-top: 28px;
+    }
+    
+    img{
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 370px);
+    }
+    .content{
+      display: inline-block;
+      vertical-align: top;
+      width: 370px;
+      padding-top: 60px;
+    }
+    
+  }
+  
+  .container{
+    max-width: 1094px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .steps {
+    background: linear-gradient(to bottom,  #00489c 0%,#1678ea 100%);
+    
+    .headings{
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+      .display2,
+      .title1{
+        color: #fff;
+      }
+    }
+    .cols{
+      margin-top: 46px;
+      display: flex;
+      justify-content: space-between;
+      .col{
+        vertical-align: top;
+        width: 32%;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+        padding: 16px 16px 56px 16px;
+        .stepNumber{
+          font-size: 200px;
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+        }
+        .title1{
+          color: $colorBlue;
+          margin-bottom: 16px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+  
+  .lifeguards{
+    background: #fff;
+    font-size: 0;
+    .title1{
+      margin-top: 20px;
+    }
+    img{
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 370px);
+    }
+    .content{
+      display: inline-block;
+      vertical-align: top;
+      width: 370px;
+      padding: 60px 0 0 16px;
+    }
+  }
+  
+  .pricing{
+     background: #00c7ff;
+    .display2,
+    .title1,
+    .trial-link{
+      color: #fff;
+      width: 370px;
+    }
+    
+    .title1{
+      margin-bottom: 36px;
+    }
+    
+    .trial-link{
+      position: relative;
+      text-decoration: none;
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100px;
+        bottom: -3px;
+        height: 2px;
+        background: #fff;
+        opacity: 0.6;
+        transition: opacity 0.3s ease-out;
+      }
+      
+      &:hover::after{
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+      }
+    }
+    
+    .price{
+      position: absolute;
+      right: 0;
+      top: 50px;
+      color:#07b2e3;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 200px;
+      letter-spacing: -10px;
+    }
+  }
+  
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $colorGreyFooter;
+    z-index: -1;
+    nav{
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 36px 0;
+      &::after{
+        content: '';
+        clear: both;
+        display: block;
+      }
+      .navleft{
+        float: left;
+      }
+      .navright{
+        float: right;
+      }
+      .footernavItem{
+        display: inline-block;
+        + .footernavItem{
+          margin-left: 20px;
+        }
+      }
+      .footernavLink{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .caption{
+      color:#fff;
+    }
   }
 }
