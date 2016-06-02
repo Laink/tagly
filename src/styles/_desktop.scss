@@ -929,3 +929,18 @@ label.focused{
   left: 34px;
   width: 113px;
 }
+
+.isSetChild{
+  display: none;
+}
+
+.isSet{
+  
+  .isSetChild{
+    display: block;
+  }
+  .isNotSetChild{
+    display: none;
+  }
+  
+} 

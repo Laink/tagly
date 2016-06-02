@@ -1,6 +1,11 @@
 $(function() {
 	console.log('Hello Tagy Gérec');
   
+  $('.isSet').hide();
+  if (window.location.href.indexOf("?list") > -1) {
+      $('body').addClass('isSet');
+    }
+  
   var urls =["asos.com/1.html", "asos.com/2.html", "asos.com/3.html", "asos.com/1.html", "asos.com/2.html", "asos.com/3.html"];
   var images =["http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/", "http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/"];
   var count = 0;
