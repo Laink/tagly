@@ -6,68 +6,163 @@
     <link href="styles/main.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
-    <title>Simpletag</title>
+    <title>Tagly Géréec</title>
 </head>
 
 <body>
-  <div class="main index">
-	  <div class="section section--left">
-       <div class="stepTracker">
-        <p class="caption">1/2</p>
-         <span class="loader loader--demi"></span>
-       </div>
-        <div class="container">
-          <div class="illu illu-box">
-            <img class="" src="./images/box-top.svg" alt="">
-            <div class="stars">
-              <img class="" src="./images/star.svg" alt="">
-              <img class="" src="./images/star.svg" alt="">
-              <img class="" src="./images/star.svg" alt="">
-              <img class="" src="./images/star.svg" alt="">
-              <img class="" src="./images/star.svg" alt="">
-            </div>
-            <img class="" src="./images/box-bottom.svg" alt="">
+  <div class="main step3">
+	  <div class="section section--nav">
+        <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-listItem">
+            <a href="" class="menuItem1">All Pages</a>
+          </li>
+          <li class="nav-listItem">
+            <a href="" class="menuItem2">Projects Settings</a>
+          </li>
+          <li class="nav-listItem">
+            <a href="" class="menuItem2">Google Analytics <i class="mdi mdi-exit-to-app"></i></a>
+          </li>
+        </ul>
+        </nav>
+        <div class="nav-reminder">
+          <img src="http://fakeimg.pl/40x40/" alt="" class="nav-reminder-thumb">
+          <div class="nav-reminder-content">
+            <p class="nav-reminder-name">Asos.com Conversion Funnel</p>
+            <p class="nav-reminder-label caption">Project</p>
           </div>
-          <h1 class="display2">Create a New Tagging Project.</h1>
-          <p class="headline1">To get started, give your new project a name and a root URL.</p>
         </div>
 	  </div><!--
-	  --><div class="section section--right">
-	    <form action="#">
-          <div class="formGroup">
-            <input class="headline2 project-name--index" type="text" id="project-name" name="project-name" placeholder="Project Name" autocomplete="off"><i class="mdi mdi-pencil editIcon js-editIcon u-hidden"></i>
-          </div>
-          <div class="formGroup">
-            <label for="project-url" class="formLabel caption">Project URL</label>
-            <input type="text" id="project-url" class="js-pasteInput" name="project-url" placeholder="Click here to add a root URL" autocomplete="off">
-            <button type="button" class="button js-pasteButton--project u-hidden">
-              Paste
-            </button>
-          </div>
-          <div class="formGroup">
-            <h3 class="headline1">Does your project fit into one or several of these categories ?</h3>
-            <input class="project-type" type="checkbox" name="project-type" id="project-type-ecommerce" value="project-type-ecommerce">
-            <label class="project-typeLabel" for="project-type-ecommerce">
-              <span class="icon"><i class="mdi mdi-shopping"></i></span>
-              <p class="caption">E-Commerce</p>
-            </label>
-            <input class="project-type" type="checkbox" name="project-type" id="project-type-social" value="project-type-social">
-            <label class="project-typeLabel" for="project-type-social">
-              <span class="icon"><i class="mdi mdi-account-multiple"></i></span>
-              <p class="caption">Social</p>
-            </label>
-            <input class="project-type" type="checkbox" name="project-type" id="project-type-nope" value="project-type-nope">
-            <label class="project-typeLabel" for="project-type-nope">
-              <span class="icon"><i class="mdi mdi-emoticon-happy"></i></span>
-              <p class="caption">Else</p>
-            </label>
-          </div>          
-	    </form>
-	    <a href="step2.html" class="fab fab--plain fab--bottomRight">
-          <i class="mdi mdi-arrow-right"></i>
-        </a>
+	  --><div class="section section--content">
+        <div class="contentWrapper">
+         <div class="titleBlock">
+           <h2 class="display2">All Pages</h2>
+           <div class="titleBlock-nav">
+             <i class="mdi mdi-format-list-bulleted displaySwitch js-ListDisplay js-ListDisplay--list"></i>
+             <i class="mdi mdi-apps js-ListDisplay displaySwitch displaySwitch--selected js-ListDisplay--grid"></i>
+           </div>
+	       <h6 class="title1">It seems that 2 page templates out of 7 need review.</h6>
+	       <h6 class="title1">Visit them below and we will gently guide you through the fix.</h6>
+         </div>
+         <div class="templatesListWrapper">
+          <ul class="templatesList templatesList--grid">
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Homepage</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product List</p>
+                <p class="caption variablesCount">6 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--alert templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product Page</p>
+                <p class="caption statusName">All good</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName statusName--alert">Needs review</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Description Page</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Shopping Cart</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Homepage</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product List</p>
+                <p class="caption variablesCount">6 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--alert templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Product Page</p>
+                <p class="caption statusName">All good</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName statusName--alert">Needs review</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Description Page</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+            <li class="templatesListItem templatesListItem--tall">
+              <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
+              <div class="templatesListLabel">
+                <p class="templatesListName">Shopping Cart</p>
+                <p class="caption variablesCount">8 variables tracked</p>
+              </div>
+              <div class="templatesListStatus">
+                <p class="caption statusLabel">Status</p>
+                <p class="caption statusName">All good</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
 	  </div>
-	  <img src="./images/logo-header.svg" alt="simpletag logo" class="fixed-logo">
+	  <a href="./new.html" class="fab fab--plain fab--bottomRight">
+          <i class="mdi mdi-plus"></i>
+        </a>
 	</div>
 	
 </body>

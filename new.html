@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <title>Simpletag</title>
+</head>
+
+<body>
+  <div class="main index">
+	  <div class="section section--left">
+        <a href="/" class="fab fab--outline fab--topLeft">
+          <i class="mdi mdi-arrow-left"></i>
+        </a>
+       <div class="stepTracker">
+        <p class="caption">1/2</p>
+         <span class="loader loader--demi"></span>
+       </div>
+        <div class="container">
+          <div class="illu illu-box">
+            <img class="" src="./images/box-top.svg" alt="">
+            <div class="stars">
+              <img class="" src="./images/star.svg" alt="">
+              <img class="" src="./images/star.svg" alt="">
+              <img class="" src="./images/star.svg" alt="">
+              <img class="" src="./images/star.svg" alt="">
+              <img class="" src="./images/star.svg" alt="">
+            </div>
+            <img class="" src="./images/box-bottom.svg" alt="">
+          </div>
+          <h1 class="display2">Create a New Tagging Project.</h1>
+          <p class="headline1">To get started, give your new project a name and a root URL.</p>
+        </div>
+	  </div><!--
+	  --><div class="section section--right">
+	    <form action="#">
+          <div class="formGroup">
+            <input class="headline2 project-name--index" type="text" id="project-name" name="project-name" placeholder="Project Name" autocomplete="off"><i class="mdi mdi-pencil editIcon js-editIcon u-hidden"></i>
+          </div>
+          <div class="formGroup">
+            <label for="project-url" class="formLabel caption">Project URL</label>
+            <input type="text" id="project-url" class="js-pasteInput" name="project-url" placeholder="Click here to add a root URL" autocomplete="off">
+            <button type="button" class="button js-pasteButton--project u-hidden">
+              Paste
+            </button>
+          </div>
+          <div class="formGroup">
+            <h3 class="headline1">Does your project fit into one or several of these categories ?</h3>
+            <input class="project-type" type="checkbox" name="project-type" id="project-type-ecommerce" value="project-type-ecommerce">
+            <label class="project-typeLabel" for="project-type-ecommerce">
+              <span class="icon"><i class="mdi mdi-shopping"></i></span>
+              <p class="caption">E-Commerce</p>
+            </label>
+            <input class="project-type" type="checkbox" name="project-type" id="project-type-social" value="project-type-social">
+            <label class="project-typeLabel" for="project-type-social">
+              <span class="icon"><i class="mdi mdi-account-multiple"></i></span>
+              <p class="caption">Social</p>
+            </label>
+            <input class="project-type" type="checkbox" name="project-type" id="project-type-nope" value="project-type-nope">
+            <label class="project-typeLabel" for="project-type-nope">
+              <span class="icon"><i class="mdi mdi-emoticon-happy"></i></span>
+              <p class="caption">Else</p>
+            </label>
+          </div>          
+	    </form>
+	    <a href="add.html" class="fab fab--plain fab--bottomRight">
+          <i class="mdi mdi-arrow-right"></i>
+        </a>
+	  </div>
+	  <img src="./images/logo-header.svg" alt="simpletag logo" class="fixed-logo">
+	</div>
+	
+</body>
+
+</html>

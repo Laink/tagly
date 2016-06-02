@@ -90,16 +90,34 @@
       display: flex;
       justify-content: space-between;
       .col{
+        position: relative;
         vertical-align: top;
         width: 32%;
         background: #fff;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         border-radius: 3px;
-        padding: 16px 16px 56px 16px;
+        padding: 0 16px 56px 16px;
+        overflow: hidden;
+        &::before{
+          position: absolute;
+          content: '';
+          left: 50%;
+          transform: translateX(-50%);
+          top: -157px;
+          display: block;
+          background-color: $colorBlue;
+          width: 431px;
+          height: 431px;
+          border-radius: 100%;
+        }
         .stepNumber{
+          display: block;
+          text-align: center;
+          position: relative;
           font-size: 200px;
           font-family: 'Poppins', sans-serif;
           color: #fff;
+          line-height: 310px;
         }
         .title1{
           color: $colorBlue;

@@ -1076,17 +1076,35 @@ html.tag body iframe {
   justify-content: space-between;
 }
 .landing .steps .cols .col {
+  position: relative;
   vertical-align: top;
   width: 32%;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-  padding: 16px 16px 56px 16px;
+  padding: 0 16px 56px 16px;
+  overflow: hidden;
+}
+.landing .steps .cols .col::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: -157px;
+  display: block;
+  background-color: #1768ea;
+  width: 431px;
+  height: 431px;
+  border-radius: 100%;
 }
 .landing .steps .cols .col .stepNumber {
+  display: block;
+  text-align: center;
+  position: relative;
   font-size: 200px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  line-height: 310px;
 }
 .landing .steps .cols .col .title1 {
   color: #1768ea;
