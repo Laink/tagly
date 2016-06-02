@@ -50,6 +50,7 @@ gulp.task('serve', ['styles', 'scripts'], function() {
       server: {
         baseDir: './'
       },
+      https: true,
       port: 9999,
     });
  

@@ -5,6 +5,9 @@
   box-sizing: border-box;
   outline: 0;
 }
+#fb-root {
+  display: none;
+}
 html {
   height: 100%;
 }
@@ -191,7 +194,7 @@ aside .step-tracker .loader .progress{
   content: '';
   display: block;
   height: 100%;
-  width: calc(100% / 2);
+  width: calc(100% / 4);
   background: #fff;
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
@@ -206,6 +209,12 @@ aside .step-tracker .loader .progress{
     margin: 0 auto 36px auto;
 }
 
+#tag-title:before {
+  background-image: url('../images/tag-title.svg');
+}
 #tag-price:before {
   background-image: url('../images/tag-price.svg');
+}
+#tag-cta:before {
+  background-image: url('../images/tag-cta.svg');
 }
