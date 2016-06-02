@@ -918,8 +918,14 @@ label.focused{
   }
 
 }
-
 .select--chosen .mdi-chevron-down{
   display: none;
 }
 
+.fixed-logo{
+  position: fixed;
+  z-index: 3;
+  bottom: 26px;
+  left: 34px;
+  width: 113px;
+}

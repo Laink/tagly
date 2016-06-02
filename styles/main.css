@@ -932,6 +932,14 @@ label.focused {
   display: none;
 }
 
+.fixed-logo {
+  position: fixed;
+  z-index: 3;
+  bottom: 26px;
+  left: 34px;
+  width: 113px;
+}
+
 html.tag {
   height: 100%;
 }
@@ -1005,7 +1013,7 @@ html.tag body iframe {
   text-decoration: none;
   text-align: center;
   position: absolute;
-  top: -45px;
+  top: -35px;
   line-height: 20px;
   width: 100%;
 }
