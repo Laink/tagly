@@ -68,6 +68,10 @@ aside h3 {
   line-height: 24px;
   margin: 0;
 }
+aside .templates-list {
+  text-align: left;
+  padding-top: 24px;
+}
 aside p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -92,12 +96,14 @@ aside button {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   border: 0;
   cursor: pointer;
+  margin-top: 14px;
 }
 aside #steps {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 75px 16px 0 16px;
+  text-align: center;
 }
 aside #steps > div {
   display: block;
@@ -109,14 +115,15 @@ aside #steps > div .centered-content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px;
-  padding-right: 16px;
+  width: 288px;
 }
 aside #steps .skip {
   font-size: 13px;
   opacity: 0.4;
   text-transform: uppercase;
   cursor: pointer;
+  display: block;
+  margin-top: 31px;
 }
 aside #steps .action {
   font-size: 13px;
@@ -124,6 +131,8 @@ aside #steps .action {
   cursor: pointer;
   color: white;
   text-decoration: none;
+  display: block;
+  margin-top: 31px;
 }
 aside #steps ul {
   padding: 0;
@@ -186,4 +195,17 @@ aside .step-tracker .loader .progress{
   background: #fff;
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
+}
+
+.tag:before {
+    content: '';
+    background-size: 100%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 36px auto;
+}
+
+#tag-price:before {
+  background-image: url('../images/tag-price.svg');
 }
