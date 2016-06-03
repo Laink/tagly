@@ -956,17 +956,18 @@ label.focused {
 .illu-empty {
   width: 315px;
   height: 315px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
   position: relative;
 }
 .illu-empty img {
   position: absolute;
+  left: 0;
 }
 @keyframes floatTop {
-  0%, 90%, 100% {
-    top: 64px;
+  0%, 10%, 98%, 100% {
+    top: 60px;
   }
-  40% {
+  45% {
     top: 70px;
   }
 }
