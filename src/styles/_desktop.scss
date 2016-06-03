@@ -477,13 +477,27 @@ label.focused{
   vertical-align: middle;
   display: inline-block;
   width: 40px;
+  border-radius: 100%;
+}
+
+.js-set .nav-reminder-thumb{
   border-radius: 3px;
 }
+
 .nav-reminder-content{
   vertical-align: middle;
   display: inline-block;
   width: 200px;
   padding-left: 5px;
+}
+
+.nav-reminder i{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  color: $colorBlueButton;
+  cursor: pointer;
 }
 
 .titleBlock{
@@ -930,16 +944,51 @@ label.focused{
   width: 113px;
 }
 
-.isSetChild{
+.illu-empty{
+  width: 315px;
+  height: 315px;
+  margin-bottom: 40px;
+  position: relative;
+  img{
+    position: absolute;
+  }
+  
+  @keyframes floatTop{
+    0%, 90%, 100%{
+      top:64px;
+    }
+    40%{
+      top:70px;
+    }
+  }
+  .illu-top{
+    z-index:2;
+    margin-left: 40px;
+//    top: 50px;
+    animation-name: floatTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
+  }
+  .illu-bot{
+    z-index:1;
+  }
+}
+
+.js-isSet{
   display: none;
 }
 
-.isSet{
+.contentWrapper.js-isNotSet{
+  text-align: center;
+}
+
+.js-set{
   
-  .isSetChild{
+  .js-isSet{
     display: block;
   }
-  .isNotSetChild{
+  .js-isNotSet{
     display: none;
   }
   

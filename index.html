@@ -12,23 +12,29 @@
 <body>
   <div class="main step3">
 	  <div class="section section--nav">
-        <a href="./new.html" class="fab fab--plain fab--topLeft isSetChild">
-          <i class="mdi mdi-arrow-left"></i>
-        </a>
         <nav class="nav">
+        <img src="./images/logo-header.svg" alt="">
         <ul class="nav-list">
           <li class="nav-listItem">
-            <a href="" class="menuItem1">All Pages</a>
+            <a href="./index.html?list" class="menuItem2 js-allpages">All Pages</a>
           </li>
           <li class="nav-listItem">
-            <a href="" class="menuItem2">Projects Settings</a>
+            <a href="./index.html" class="menuItem1 js-settings">Projects Settings</a>
           </li>
           <li class="nav-listItem">
             <a href="" class="menuItem2">Google Analytics <i class="mdi mdi-exit-to-app"></i></a>
           </li>
         </ul>
         </nav>
-        <div class="nav-reminder">
+        <div class="nav-reminder js-isNotSet">
+          <img src="http://fakeimg.pl/40x40/" alt="" class="nav-reminder-thumb">
+          <div class="nav-reminder-content">
+            <p class="nav-reminder-name">Emily Donovan</p>
+            <p class="nav-reminder-label caption">0 Projects</p>
+          </div>
+          <i class="mdi mdi-plus"></i>
+        </div>
+        <div class="nav-reminder js-isSet">
           <img src="http://fakeimg.pl/40x40/" alt="" class="nav-reminder-thumb">
           <div class="nav-reminder-content">
             <p class="nav-reminder-name">Asos.com Conversion Funnel</p>
@@ -37,20 +43,28 @@
         </div>
 	  </div><!--
 	  --><div class="section section--content">
-        <div class="contentWrapper">
+        <div class="contentWrapper js-isNotSet">
+        <div class="illu-empty">
+          <img src="./images/empty-top.svg" alt="" class="illu-top">
+          <img src="./images/empty-bottom.svg" alt="" class="illu-bot">
+        </div>
+         <h2 class="display2">Let's get started.</h2>
+         <p class="headline1">Welcome to Tagly! This is where the pages of you website will be displayed.<br/>Click the setup button below to get started.</p>
+        <a class="button button--plain add-template-button" href="./new.html">Set up my website</a>
+        </div>
+        <div class="contentWrapper js-isSet">
          <div class="titleBlock">
            <h2 class="display2">All Pages</h2>
            <div class="titleBlock-nav">
              <i class="mdi mdi-format-list-bulleted displaySwitch js-ListDisplay js-ListDisplay--list"></i>
              <i class="mdi mdi-apps js-ListDisplay displaySwitch displaySwitch--selected js-ListDisplay--grid"></i>
            </div>
-	       <h6 class="title1 isSetChild">It seems that 2 page templates out of 7 need review.</h6>
-	       <h6 class="title1 isSetChild">Visit them below and we will gently guide you through the fix.</h6>
+	       <h6 class="title1">It seems that 2 page templates out of 7 need review.</h6>
+	       <h6 class="title1">Visit them below and we will gently guide you through the fix.</h6>
 	       
          </div>
          <div class="templatesListWrapper">
-          <p class="headline2 opacity isNotSetChild">Uh oh, looks like you didn't add any page...</p>
-          <ul class="templatesList templatesList--grid isSetChild">
+          <ul class="templatesList templatesList--grid">
             <li class="templatesListItem templatesListItem--tall">
               <img src="http://fakeimg.pl/210x140/" alt="" class="templatesListImage">
               <div class="templatesListLabel">
@@ -165,7 +179,7 @@
         </div>
         </div>
 	  </div>
-	  <a href="./new.html" class="fab fab--plain fab--bottomRight">
+	  <a href="./new.html" class="fab fab--plain fab--bottomRight js-isSet">
           <i class="mdi mdi-plus"></i>
         </a>
 	</div>
