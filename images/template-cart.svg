@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="43px" viewBox="0 0 58 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>cart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.44910619,0.898212381 C0.20107169,0.402143381 0.449542999,0 0.992335796,0 L51.0076642,0 C51.5557161,0 51.8002462,0.399507582 51.5508938,0.898212381 L42.8962338,18.2075324 C42.4012576,19.1974849 41.1107383,20 39.9982567,20 L12.0017433,20 C10.896211,20 9.59560275,19.1912055 9.10376618,18.2075324 L0.44910619,0.898212381 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ILLU" transform="translate(-205.000000, -41.000000)">
+            <g id="cart" transform="translate(205.000000, 41.000000)">
+                <g id="milk" transform="translate(33.000000, 0.000000)">
+                    <rect id="Rectangle-729" fill="#E0EEFF" x="0" y="5.88235294" width="12.3076923" height="14.1176471"></rect>
+                    <polygon id="Rectangle-729" fill="#FFFFFF" points="6.15384615 1.17647059 12.3076923 5.88235294 0 5.88235294"></polygon>
+                    <polygon id="Rectangle-729" fill="#86BFFF" points="6.15384615 1.17647059 9.86435435 1.17647059 15.9953643 5.94831859 12.2944114 5.94831859"></polygon>
+                    <rect id="Rectangle-735" fill="#73AEF2" x="6.15384615" y="0" width="3.69230769" height="1.17647059"></rect>
+                    <rect id="Rectangle-729" fill="#4886CD" x="12.3076923" y="5.88235294" width="3.69230769" height="14.1176471"></rect>
+                </g>
+                <rect id="Rectangle-729" fill="#4886CD" x="10" y="10" width="15" height="10"></rect>
+                <rect id="Rectangle-729" fill="#86BFFF" transform="translate(24.000000, 24.000000) rotate(-90.000000) translate(-24.000000, -24.000000) " x="12" y="18" width="24" height="12" rx="6"></rect>
+                <g id="Group-3" transform="translate(0.000000, 18.000000)">
+                    <g id="Rectangle-727" transform="translate(4.000000, 5.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#73AEF2" xlink:href="#path-1"></use>
+                        <rect fill="#1160BB" mask="url(#mask-2)" x="-2" y="0" width="56" height="1"></rect>
+                        <rect fill="#1160BB" mask="url(#mask-2)" x="-2" y="1" width="31" height="1"></rect>
+                    </g>
+                    <rect id="Rectangle-727" fill="#4886CD" x="2" y="1" width="56" height="4" rx="1"></rect>
+                    <rect id="Rectangle-727" fill="#73AEF2" x="0" y="0" width="33" height="6" rx="1"></rect>
+                </g>
+                <circle id="Oval-64" fill="#1160BB" cx="30" cy="21" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

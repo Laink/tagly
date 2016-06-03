@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="259px" height="206px" viewBox="0 0 259 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="106" height="130" rx="2.39999986"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="106" height="130" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="106" height="130" rx="2.39999986"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="106" height="130" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="132" height="162" rx="3"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="132" height="162" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <linearGradient x1="73.1532996%" y1="16.7502187%" x2="4.43964853%" y2="94.0902362%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.15" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.1532996%" y1="16.7502187%" x2="4.43964853%" y2="94.0902362%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.25" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.1532996%" y1="16.7502187%" x2="4.43964853%" y2="94.0902362%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-11" x="0" y="0" width="53" height="65" rx="1.19999993"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="53" height="65" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ILLU" transform="translate(-944.000000, -198.000000)">
+            <g id="EXTENSION" transform="translate(915.000000, 92.000000)">
+                <g id="Group-3" transform="translate(0.000000, 97.000000)">
+                    <g id="ILLU">
+                        <g id="Group-2" opacity="0.400000006" transform="translate(32.000000, 9.000000)">
+                            <g id="page" transform="translate(150.000000, 22.000000)" fill="#FFFFFF">
+                                <use id="Rectangle-100" stroke-opacity="0.6" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="1.5999999" fill-opacity="0.4" xlink:href="#path-1"></use>
+                                <rect id="Rectangle-103" x="11" y="53" width="84" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="11" width="84" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="63" width="80" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="22" width="84" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="74" width="84" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="32" width="79" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="84" width="81" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="43" width="84" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="95" width="77" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="105" width="81" height="4"></rect>
+                                <rect id="Rectangle-103" x="11" y="116" width="67" height="4"></rect>
+                            </g>
+                            <g id="page" transform="translate(0.000000, 22.000000)" fill="#FFFFFF">
+                                <use id="Rectangle-100" stroke-opacity="0.6" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="1.5999999" fill-opacity="0.4" xlink:href="#path-3"></use>
+                                <rect id="Rectangle-101" fill-opacity="0.4" x="11.2424242" y="11.2345679" width="34.530303" height="34.5061728"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="52.1604938" width="83.5151515" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="52.1969697" y="11.2345679" width="42.5606061" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="62.5925926" width="80.3030303" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="52.1969697" y="21.6666667" width="42.5606061" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="73.0246914" width="83.5151515" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="52.1969697" y="32.0987654" width="40.1515152" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="83.4567901" width="81.1060606" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="52.1969697" y="42.5308642" width="42.5606061" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="93.8888889" width="77.0909091" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="104.320988" width="81.1060606" height="4.01234568"></rect>
+                                <rect id="Rectangle-103" x="11.2424242" y="114.753086" width="67.4545455" height="4.01234568"></rect>
+                            </g>
+                            <g id="page" transform="translate(62.000000, 0.000000)">
+                                <use id="Rectangle-100" stroke-opacity="0.6" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="2" fill="#73AEF2" xlink:href="#path-5"></use>
+                                <rect id="Rectangle-101" fill-opacity="0.4" fill="#FFFFFF" x="14" y="14" width="43" height="43"></rect>
+                                <rect id="Rectangle-101" fill-opacity="0.4" fill="#FFFFFF" x="65" y="14" width="53" height="95"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="65" width="43" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="78" width="43" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="91" width="43" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="104" width="43" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="117" width="104" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="130" width="101" height="5"></rect>
+                                <rect id="Rectangle-103" fill="#FFFFFF" x="14" y="143" width="84" height="5"></rect>
+                            </g>
+                        </g>
+                        <polygon id="Path-155" fill="url(#linearGradient-7)" transform="translate(229.928711, 68.583984) rotate(-9.000000) translate(-229.928711, -68.583984) " points="160.244141 113.244141 230.720703 10.5332031 299.613281 54.2285156 170.425781 126.634766"></polygon>
+                        <polygon id="Path-155" fill="url(#linearGradient-7)" transform="translate(86.684570, 68.050781) scale(-1, 1) rotate(-7.000000) translate(-86.684570, -68.050781) " points="17 112.710938 87.4765625 10 156.369141 53.6953125 27.1816406 126.101563"></polygon>
+                        <polygon id="Path-155" fill="url(#linearGradient-8)" transform="translate(77.078540, 172.379149) scale(-1, 1) rotate(54.000000) translate(-77.078540, -172.379149) " points="23.7274273 218.577624 94.2039898 115.866686 130.429652 168.975634 32.4094771 228.891611"></polygon>
+                        <polygon id="Path-155" fill="url(#linearGradient-9)" transform="translate(236.893240, 173.116890) rotate(55.000000) translate(-236.893240, -173.116890) " points="183.542128 219.315365 254.01869 116.604427 290.244353 169.713375 192.224178 229.629352"></polygon>
+                        <g id="page" filter="url(#filter-10)" transform="translate(134.000000, 113.000000)">
+                            <use id="Rectangle-100" stroke-opacity="0.6" stroke="#FFFFFF" mask="url(#mask-12)" fill="#00C7FF" xlink:href="#path-11"></use>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="26.4814815" width="41.7575758" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="5.61728395" width="41.7575758" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="31.6975309" width="40.1515152" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="10.8333333" width="41.7575758" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="36.9135802" width="41.7575758" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="16.0493827" width="39.3484848" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="42.1296296" width="40.5530303" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="21.2654321" width="41.7575758" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="47.345679" width="38.5454545" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="52.5617284" width="40.5530303" height="2.00617284"></rect>
+                            <rect id="Rectangle-103" fill="#FFFFFF" x="5.62121212" y="57.7777778" width="33.7272727" height="2.00617284"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

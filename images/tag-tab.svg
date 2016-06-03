@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>illus-element-tabs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#1678EA" offset="0%"></stop>
+            <stop stop-color="#00489C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="24" cy="24" r="24"></circle>
+        <rect id="path-4" x="0" y="17" width="28" height="22" rx="3"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ILLU" transform="translate(-26.000000, -666.000000)">
+            <g id="illus-element-tabs" transform="translate(26.000000, 666.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="Group-3" mask="url(#mask-3)">
+                    <g transform="translate(10.000000, -3.000000)" id="Rectangle-588">
+                        <g fill="none">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="#73AEF2" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <rect fill="#2E6FBA" fill-rule="evenodd" x="19" y="17" width="9" height="5"></rect>
+                        <rect fill="#4886CD" fill-rule="evenodd" x="9" y="17" width="10" height="5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

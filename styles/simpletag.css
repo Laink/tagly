@@ -73,7 +73,9 @@ aside h3 {
 }
 aside .templates-list {
   text-align: left;
-  padding-top: 24px;
+  padding-top: 36px;
+  overflow-y: scroll;
+  height: calc(100vh - 54px);
 }
 aside p {
   font-family: 'Roboto', sans-serif;
@@ -108,6 +110,24 @@ aside #steps {
   padding: 75px 16px 0 16px;
   text-align: center;
 }
+.helloworld {
+  display: block;
+  width: 257px;
+  height: 206px;
+  background-size: 100%;
+  background: url('../images/helloworld.svg');
+  margin: 0 auto 20px auto;
+}
+aside #steps.edit {
+  padding: 54px 0 0 0;
+}
+aside #steps.edit h3, aside #steps.edit p, aside #steps.edit ul, aside #steps.edit button {
+  margin-left: 16px;
+}
+aside #steps.edit .formGroup h3, aside #steps.edit .formGroup p {
+  margin-left: 0;
+}
+
 aside #steps > div {
   display: block;
   width: 100%;
@@ -141,10 +161,61 @@ aside #steps ul {
   padding: 0;
   list-style: none;
   font-size: 0;
+}
+aside #steps ul.list {
+
+}
+aside #steps ul.list li {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+aside #steps ul.list li .item_infos {
+  float: left;
+  line-height: 80px;
+}
+aside #steps ul.list li .item_infos .icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 48px;
+  margin-right: 17px;
+}
+aside #steps ul.list li .item_infos .icon:before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-size: 100%;
+}
+aside #steps ul.list li .item_infos .label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+}
+aside #steps ul.list li .item_state {
+  float: right;
+  font-size: 11px;
+  font-weight: 100;
+  margin: 27px 4px 27px 0;
+  width: 50px;
+}
+aside #steps ul.list li .state_label {
+  display: block;
+  opacity: 0.4;
+}
+aside #steps ul.list li .state_value {
+  display: block;
+}
+aside #steps ul.tiles {
   margin-top: 25px;
 }
 
-aside #steps ul li {
+aside #steps ul.tiles li {
   position: relative;
   width: 140px;
   height: 110px;
@@ -154,11 +225,22 @@ aside #steps ul li {
   text-align: center;
 }
 
-aside #steps ul li:nth-child(even) {
+aside #steps ul.tiles li:nth-child(even) {
   margin-left: 8px;
 }
 
-aside #steps ul li a {
+aside #steps ul.tiles li:before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  height: 90px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+aside #steps ul.tiles li a {
   position: absolute;
   left: 0;
   right: 0;
@@ -209,6 +291,207 @@ aside .step-tracker .loader .progress{
     margin: 0 auto 36px auto;
 }
 
+.fab {
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+
+.fab i {
+  font-size: 24px;
+  line-height: 56px;
+  color: #fff;
+}
+
+.fab--plain {
+  background-color: #00c7ff;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fab--bottomRight {
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
+  z-index: 100;
+}
+
+.formGroup {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.formGroup:first-of-type {
+  margin-top: 35px;
+  margin-left: 16px;
+}
+
+.formLabel {
+  display: block;
+}
+
+.caption {
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+input {
+  margin-top: 5px;
+  width: 300px;
+  border: 0;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #1678EA;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+label.focused {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.select {
+  position: relative;
+  box-shadow: 0px 0px 6px transparent;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.select * {
+  margin: 0;
+  padding: 0;
+}
+
+.select .caption {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.select-label {
+  position: relative;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.select-labelTxt {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.select-label .mdi-close {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  font-size: 24px;
+  color: #00c7ff;
+  display: none;
+  cursor: pointer;
+}
+
+.select-label .mdi-chevron-down {
+  position: absolute;
+  left: 200px;
+  top: 32px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.select-options {
+  display: none;
+  padding: 10px 17px 0 17px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  height: 210px;
+  overflow: scroll;
+}
+
+.select-option {
+  color: #2e3b42;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 35px;
+  transition: color 0.2s ease-out;
+}
+
+.select-option:not(.select-option--cat):hover {
+  cursor: pointer;
+  color: #1768ea;
+  transition: color 0.2s ease-out;
+}
+
+.select-option--cat {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 30px;
+  color: rgba(1, 1, 1, 0.4);
+}
+
+.select--opened {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-out;
+  border-radius: 5px;
+  height: 295px;
+  position: absolute;
+  width: 100%;
+}
+.select--opened .select-labelTxt {
+  color: #2e3b42;
+}
+.select--opened .mdi-close {
+  display: block;
+}
+.select--opened .select-options {
+  display: block;
+}
+.select--opened .select-label {
+  border-bottom: 1px solid #ccc;
+}
+.select--opened .mdi-chevron-down {
+  display: none;
+}
+.select--opened .caption {
+  color: #1768ea;
+}
+.select--chosen .mdi-chevron-down {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #186CCE;
+  margin-top: 36px;
+  border: 0;
+}
+
 #tag-title:before {
   background-image: url('../images/tag-title.svg');
 }
@@ -217,4 +500,17 @@ aside .step-tracker .loader .progress{
 }
 #tag-cta:before {
   background-image: url('../images/tag-cta.svg');
+}
+
+#template-product:before {
+  background-image: url('../images/template-product.svg');
+  width: 68px;
+}
+#template-cart:before {
+  background-image: url('../images/template-cart.svg');
+  width: 58px;
+}
+#template-checkout:before {
+  background-image: url('../images/template-checkout.svg');
+  width: 36px;
 }
