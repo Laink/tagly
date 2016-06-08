@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>illus-element-shipping1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#1678EA" offset="0%"></stop>
+            <stop stop-color="#00489C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="24" cy="24" r="24"></circle>
+        <rect id="path-4" x="10" y="23" width="28" height="28"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ILLU" transform="translate(-26.000000, -218.000000)">
+            <g id="illus-element-shipping1" transform="translate(26.000000, 218.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="Rectangle-588" mask="url(#mask-3)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#73AEF2" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <rect id="Rectangle-588" fill="#4886CD" mask="url(#mask-3)" x="21" y="23" width="6" height="28"></rect>
+                <rect id="Rectangle-591" fill="#FFFFFF" mask="url(#mask-3)" transform="translate(32.000000, 29.500000) rotate(-15.000000) translate(-32.000000, -29.500000) " x="29" y="28" width="6" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
