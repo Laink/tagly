@@ -164,7 +164,7 @@ $(function() {
 
 	// EDIT A TEMPLATE
 	else if(window.location.hash == '#simpletag_edit') {
-		var simpletag_url = 'https://simpletag.local/';
+		var simpletag_url = 'https://localhost:9999/';
 		var website_url = 'https://blackmilkclothing.com/';
 
 		// Wipe DOM
