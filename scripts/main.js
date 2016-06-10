@@ -1,6 +1,4 @@
-$(function() {
-	console.log('Hello Tagy Gérec');
-  
+$(function() {  
   if (window.location.href.indexOf("?list") > -1) {
       $('body').addClass('js-set');
       $('.js-allpages').addClass('menuItem1').removeClass('menuItem2');
