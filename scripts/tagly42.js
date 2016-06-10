@@ -290,7 +290,7 @@ $(function() {
 				if(slick.currentSlide == 1) {
 					$('.fab').fadeTo('fast', 0);
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your element?');
-					$('#simpletag-frame').contents().find('a, button, span, p').on('mouseover', function(e) {
+					$('#simpletag-frame').contents().find('a, button, span, p, h1, h2, h3, h4, h5').on('mouseover', function(e) {
 						var pos_top = $(this).offset().top;
 						var pos_left = $(this).offset().left;
 						var overlay_width = $(this).innerWidth() + 20;
