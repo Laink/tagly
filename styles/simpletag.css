@@ -120,10 +120,10 @@ aside #steps {
 }
 .allset {
   display: block;
-  width: 257px;
-  height: 206px;
+  width: 288px;
+  height: 243px;
   background-size: 100%;
-  background: url('../images/helloworld.svg');
+  background: url('../images/allset.svg');
   margin: 0 auto 20px auto;
 }
 aside #steps.edit {
@@ -144,7 +144,7 @@ aside #steps > div {
 }
 aside #steps > div .centered-content {
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50% - 50px);
   transform: translateY(-50%);
   width: 288px;
 }
