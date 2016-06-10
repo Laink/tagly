@@ -7,7 +7,7 @@ $(function() {
 	// SET UP A NEW TEMPLATE
 	if(window.location.hash == '#simpletag_setup') {
 		var elements_tracked = 4;
-		var simpletag_url = 'https://simpletag.local/';
+		var simpletag_url = 'https://localhost:9999/';
 		var website_url = 'https://blackmilkclothing.com/';
 
 		// Wipe DOM
