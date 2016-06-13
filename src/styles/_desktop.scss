@@ -478,6 +478,7 @@ label.focused{
   display: inline-block;
   width: 40px;
   border-radius: 100%;
+  border: 1px solid $colorGreyLight;
 }
 
 .js-set .nav-reminder-thumb{

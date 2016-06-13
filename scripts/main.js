@@ -1,4 +1,6 @@
-$(function() {  
+$(function() {
+//	console.log('Hello Tagy Gérec');
+  
   if (window.location.href.indexOf("?list") > -1) {
       $('body').addClass('js-set');
       $('.js-allpages').addClass('menuItem1').removeClass('menuItem2');
@@ -8,6 +10,10 @@ $(function() {
   var urls =["asos.com/1.html", "asos.com/2.html", "asos.com/3.html", "asos.com/1.html", "asos.com/2.html", "asos.com/3.html"];
   var images =["http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/", "http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/"];
   var count = 0;
+  
+  $('.project-type').change(function(){
+    $('.fab.u-hidden').removeClass('u-hidden');
+  });
   
   /* */
   /* paste buttons */
