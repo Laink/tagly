@@ -327,6 +327,10 @@ input {
   color: #2e3b42;
 }
 
+#page-url {
+  width: 400px;
+}
+
 input:focus {
   outline: none;
 }
@@ -424,7 +428,11 @@ label.focused {
 .templatesListItem--tall {
   width: 212px;
   height: 192px;
-  margin: 0 24px 24px 0;
+  margin: 0 20px 24px 0;
+}
+
+.templateListLink {
+  font-size: 0;
 }
 
 .templatesListImage {

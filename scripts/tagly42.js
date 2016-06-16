@@ -8,7 +8,7 @@ $(function() {
 	if(window.location.hash == '#simpletag_setup') {
 		var elements_tracked = 4;
 		var simpletag_url = 'https://localhost:9999/';
-		var website_url = 'https://blackmilkclothing.com/';
+		var website_url = 'https://blackmilkclothing.com/collections/day-vs-night/products/superman-long-sleeve-skater-dress';
 
 		// Wipe DOM
 		$('body *').remove();
@@ -50,7 +50,7 @@ $(function() {
 		  url: '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js',
 		  dataType: "script"
 		}).done(function() {
-			$('body').append('<aside><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">New Page</span><span class="step-subtitle">No elements tracked yet</span></div></div><div class="step-tracker"><p class="step-number"><span class="current">1</span>/' + elements_tracked + '</p><span class="loader"><span class="progress"></span></span></div><div id="steps"><div><div class="centered-content"><div class="helloworld"></div><h3>Hello World!</h3><p>This page isn\'t one of your templates...yet.</p><button data-id="slick-next">Add to templates</button></div></div><div><div class="templates-list"><h3>What type of page are we looking at?</h3><ul class="tiles"><li id="template-home"><a href="javascript:void(0)" data-id="slick-next">Home</a></li><li id="template-category"><a href="javascript:void(0)" data-id="slick-next">Category</a></li><li id="template-product"><a href="javascript:void(0)" data-id="slick-next">Product</a></li><li id="template-search"><a href="javascript:void(0)" data-id="slick-next">Search</a></li><li id="template-basket"><a href="javascript:void(0)" data-id="slick-next">Basket</a></li><li id="template-checkout"><a href="javascript:void(0)" data-id="slick-next">Checkout</a></li><li id="template-contact"><a href="javascript:void(0)" data-id="slick-next">Contact</a></li><li id="template-other"><a href="javascript:void(0)" data-id="slick-next">Other</a></li></ul></div></div><div><ul class="tiles"><li id="template-product"><a href="javascript:void(0)">Product Page</a></li></ul><p class="secondary">We are now going to get your page template set up by clicking all the important elements step-by-step.</p><a href="javascript:void(0)" class="action" data-id="slick-next">Let\'s do this</a></div><div><div class="centered-content tag" id="tag-title"><h3>Title</h3><p class="secondary">Start by clicking on your title to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-price"><h3>Price</h3><p class="secondary">Click on your "Price" to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-size"><h3>Size</h3><p class="secondary">Click on your size to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-cta"><h3>Add to cart</h3><p class="secondary">Click on your "Add to cart" button to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content"><div class="allset"></div><h3>You\'re all set!</h3><p class="secondary">Navigate to another page to track it.</p><a href="' + simpletag_url + 'index.html?list" class="action">Back to all pages</a></div></div></aside>');
+			$('body').append('<aside><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">New Page</span><span class="step-subtitle">No elements tracked yet</span></div></div><div class="step-tracker"><p class="step-number"><span class="current">1</span>/' + elements_tracked + '</p><span class="loader"><span class="progress"></span></span></div><div id="steps"><div><ul class="tiles"><li id="template-product"><a href="javascript:void(0)">Product Page</a></li></ul><p class="secondary">We are now going to get your page template set up by clicking all the important elements step-by-step.</p><a href="javascript:void(0)" class="action" data-id="slick-next">Let\'s do this</a></div><div><div class="centered-content tag" id="tag-title"><h3>Title</h3><p class="secondary">Start by clicking on your title to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-price"><h3>Price</h3><p class="secondary">Click on your "Price" to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-size"><h3>Size</h3><p class="secondary">Click on your size to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-cta"><h3>Add to cart</h3><p class="secondary">Click on your "Add to cart" button to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content"><div class="allset"></div><h3>You\'re all set!</h3><p class="secondary">Navigate to another page to track it.</p><a href="' + simpletag_url + 'index.html?list" class="action">Back to all pages</a></div></div></aside>');
 			$('#steps').slick({
 				infinite: false,
 				draggable: false,
@@ -78,21 +78,22 @@ $(function() {
 
 			// Set up slides
 			$('#steps').on('afterChange', function(event, slick, direction){
-				if(slick.currentSlide == 2) {
-					$('.step-infos').fadeOut('fast', function() {
-						$('.step-subtitle').text('No elements tracked yet').css('display', 'block');
-						$('.step-title').text('Product page');
-						$('.step-infos').fadeIn();
-					});
-					$('#simpletag-frame').contents().find('a, button, span, p').off('mouseover');
-					$('#simpletag-frame').contents().find('a, button, span, p').off('click');
-					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
-					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
-				}
-				else if(slick.currentSlide == 3) {
+//				if(slick.currentSlide == 2) {
+//					$('.step-infos').fadeOut('fast', function() {
+//						$('.step-subtitle').text('No elements tracked yet').css('display', 'block');
+//						$('.step-title').text('Product page');
+//						$('.step-infos').fadeIn();
+//					});
+//					$('#simpletag-frame').contents().find('a, button, span, p, h1').off('mouseover');
+//					$('#simpletag-frame').contents().find('a, button, span, p, h1').off('click');
+//					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
+//					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
+//				}
+//				else
+					if(slick.currentSlide == 1) {
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your title?');
 					$('.step-tracker').fadeIn('fast');
-					$('#simpletag-frame').contents().find('a, button, span, p').on('mouseover', function(e) {
+					$('#simpletag-frame').contents().find('a, button, span#AddToCartText, span.money, p, h1').on('mouseover', function(e) {
 						var pos_top = $(this).offset().top;
 						var pos_left = $(this).offset().left;
 						var overlay_width = $(this).innerWidth() + 20;
@@ -103,7 +104,7 @@ $(function() {
 						$('#simpletag-frame').contents().find('#simpletag-overlay').css({ top : pos_top - 10 + 'px', left : pos_left - 10 + 'px' }).width(overlay_width).height(overlay_height);
 					});
 
-					$('#simpletag-frame').contents().find('a, button, span, p').on('click', function(e) {
+					$('#simpletag-frame').contents().find('a, button, span#AddToCartText, span.money, p, h1').on('click', function(e) {
 						e.preventDefault();
 						$("#steps").fadeTo('fast', 0, function() {
 						   $(this).slick('slickNext');
@@ -113,7 +114,7 @@ $(function() {
 						});
 					});
 				}
-				else if(slick.currentSlide == 4) {
+				else if(slick.currentSlide == 2) {
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
 					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your price?');
@@ -124,7 +125,11 @@ $(function() {
 						$(this).fadeIn();
 					});
 				}
-				else if(slick.currentSlide == 5) {
+				else if(slick.currentSlide == 3) {
+					$('#simpletag-frame').contents().find('.chosen-drop').remove();
+					$('#simpletag-frame').contents().find('.chosen-single').on('click', function(e) {
+						$('#simpletag-frame').contents().find('.chosen-container').removeClass("chosen-with-drop");
+					});
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
 					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your size?');
@@ -135,7 +140,7 @@ $(function() {
 						$(this).fadeIn();
 					});
 				}
-				else if(slick.currentSlide == 6) {
+				else if(slick.currentSlide == 4) {
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
 					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your Call to Action?');
@@ -146,7 +151,7 @@ $(function() {
 						$(this).fadeIn();
 					});
 				}
-				else if(slick.currentSlide == 7) {
+				else if(slick.currentSlide == 5) {
 					$('#simpletag-frame').contents().find('a, button, span, p').off('mouseover');
 					$('#simpletag-frame').contents().find('a, button, span, p').off('click');
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
@@ -165,7 +170,7 @@ $(function() {
 	// EDIT A TEMPLATE
 	else if(window.location.hash == '#simpletag_edit') {
 		var simpletag_url = 'https://localhost:9999/';
-		var website_url = 'https://blackmilkclothing.com/';
+		var website_url = 'https://blackmilkclothing.com/collections/day-vs-night/products/superman-long-sleeve-skater-dress';
 
 		// Wipe DOM
 		$('body *').remove();

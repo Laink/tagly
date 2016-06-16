@@ -7,20 +7,20 @@ $(function() {
       $('.js-settings').addClass('menuItem2').removeClass('menuItem1');
     }
   
-  var urls =["asos.com/1.html", "asos.com/2.html", "asos.com/3.html", "asos.com/1.html", "asos.com/2.html", "asos.com/3.html"];
-  var images =["http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/", "http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/"];
+  var urls =["https://blackmilkclothing.com/", "https://blackmilkclothing.com/collections/day-vs-night", "https://blackmilkclothing.com/products/superman-skater-dress"];
+  var images =["./images/thumb-home.png", "./images/thumb-list.png", "./images/thumb-product.png"];
   var count = 0;
   
   /* */
   /* paste buttons */
   $('.js-pasteButton--project').click(function(){
-    $('.js-pasteInput').val("http://asos.com");
+    $('.js-pasteInput').val("https://blackmilkclothing.com");
     $('.js-pasteInput').focus();
   });
   
   $('.js-pasteButton--page').click(function(){
     $('.js-pasteInput').val(urls[count]);
-    count++;
+//    count++;
     $('.js-pasteInput').focus();
   });
   
@@ -73,7 +73,7 @@ $(function() {
   
   $('.project-type').change(function(){
     $('.fab').removeClass('u-hidden');
-  })
+  });
   
 
   /* step 3 */
@@ -117,6 +117,7 @@ $(function() {
     $('#page-url').val('');
     $('.select-labelTxt').text('Select a template type');
     $('.js-select').removeClass('select--chosen');
+    count++;
     return false;
   });
   
