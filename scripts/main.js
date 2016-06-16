@@ -1,5 +1,5 @@
 $(function() {
-//	console.log('Hello Tagy Gérec');
+	console.log('Hello Tagy Gérec');
   
   if (window.location.href.indexOf("?list") > -1) {
       $('body').addClass('js-set');
@@ -10,10 +10,6 @@ $(function() {
   var urls =["asos.com/1.html", "asos.com/2.html", "asos.com/3.html", "asos.com/1.html", "asos.com/2.html", "asos.com/3.html"];
   var images =["http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/", "http://fakeimg.pl/144x90/", "http://fakeimg.pl/143x90/", "http://fakeimg.pl/142x90/"];
   var count = 0;
-  
-  $('.project-type').change(function(){
-    $('.fab.u-hidden').removeClass('u-hidden');
-  });
   
   /* */
   /* paste buttons */
@@ -74,6 +70,10 @@ $(function() {
   $('input').blur(function(){
     $(this).closest('.formGroup').find('label').removeClass('focused');
   });
+  
+  $('.project-type').change(function(){
+    $('.fab').removeClass('u-hidden');
+  })
   
 
   /* step 3 */

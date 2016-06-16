@@ -71,6 +71,10 @@ $(function() {
     $(this).closest('.formGroup').find('label').removeClass('focused');
   });
   
+  $('.project-type').change(function(){
+    $('.fab').removeClass('u-hidden');
+  })
+  
 
   /* step 3 */
   /* switch between list and grid display for templates list*/
