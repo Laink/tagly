@@ -295,7 +295,7 @@ $(function() {
 				if(slick.currentSlide == 1) {
 					$('.fab').fadeTo('fast', 0);
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').text('Is this your element?');
-					$('#simpletag-frame').contents().find('a, button, span, p, h1, h2, h3, h4, h5').on('mouseover', function(e) {
+					$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').on('mouseover', function(e) {
 						var pos_top = $(this).offset().top;
 						var pos_left = $(this).offset().left;
 						var overlay_width = $(this).innerWidth() + 20;
@@ -305,17 +305,17 @@ $(function() {
 						$('#simpletag-frame').contents().find('#simpletag-tooltip').css({ top : pos_top + 'px', left : pos_left + $(this).width() / 2 + 'px' });
 						$('#simpletag-frame').contents().find('#simpletag-overlay').css({ top : pos_top - 10 + 'px', left : pos_left - 10 + 'px' }).width(overlay_width).height(overlay_height);
 
-						$('#simpletag-frame').contents().find('a, button, span, p').on('click', function(e) {
+						$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').on('click', function(e) {
 							e.preventDefault();
 							$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
-							$('#simpletag-frame').contents().find('a, button, span, p').off('mouseover');
-							$('#simpletag-frame').contents().find('a, button, span, p').off('click');
+							$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').off('mouseover');
+							$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').off('click');
 						});
 					});
 				}
 				else if(slick.currentSlide == 2) {
-					$('#simpletag-frame').contents().find('a, button, span, p').off('mouseover');
-					$('#simpletag-frame').contents().find('a, button, span, p').off('click');
+					$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').off('mouseover');
+					$('#simpletag-frame').contents().find('button, span, p, h1, h2, h3, h4, h5, .product-recommendation img, .hashtag-img').off('click');
 					$('#simpletag-frame').contents().find('#simpletag-tooltip').hide();
 					$('#simpletag-frame').contents().find('#simpletag-overlay').hide();
 				}
