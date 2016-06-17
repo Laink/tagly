@@ -524,12 +524,11 @@ hr {
   background-image: url('../images/tag-wishlist.svg');
 }
 #tag-cross:before {
-  background-image: url('../images/tag-cross.svg');
+  background-image: url('../images/tag-wishlist.svg');
 }
 #tag-shipping:before {
   background-image: url('../images/tag-shipping.svg');
 }
-
 #template-product:before {
   background-image: url('../images/template-product.svg');
   width: 68px;
