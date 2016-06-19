@@ -149,9 +149,28 @@
       display: inline-block;
       vertical-align: top;
       width: 370px;
-      padding: 60px 0 0 16px;
+      padding: 60px 0 0 32px;
     }
   }
+	
+	.reports{
+		background: #fff;
+		font-size: 0;
+		.container{
+     padding-bottom: 0; 
+    }
+		img{
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 424px);
+    }
+		.content{
+      display: inline-block;
+      vertical-align: top;
+      width: 424px;
+      padding: 60px 16px 0 0;
+    }
+	}
   
   .pricing{
      background: #00c7ff;
