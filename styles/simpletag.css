@@ -144,10 +144,8 @@ aside #steps > div {
 }
 aside #steps > div .centered-content {
   position: absolute;
-/*
-  top: calc(50% - 50px);
+  top: 100%;
   transform: translateY(-50%);
-*/
   width: 288px;
 }
 aside #steps .skip {
