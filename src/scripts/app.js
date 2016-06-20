@@ -135,5 +135,5 @@ $(function() {
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#insight').offset().top});
     return false;
-  })
+  });
 });
