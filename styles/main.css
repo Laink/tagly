@@ -466,6 +466,12 @@ label.focused {
   height: 140px;
 }
 
+nav.nav img {
+  margin-bottom: 36px;
+  position: relative;
+  left: -67px;
+}
+
 .nav-listItem {
   list-style: none;
   margin-bottom: 30px;
