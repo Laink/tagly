@@ -432,6 +432,7 @@ label.focused {
 }
 
 .templateListLink {
+	text-decoration: none;
   font-size: 0;
 }
 
