@@ -4,24 +4,42 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/remodal.css" rel="stylesheet">
+    <link href="styles/remodal-default-theme.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/remodal.min.js"></script>
     <title>DataHound</title>
 </head>
 
 <body class="landing">
   <div class="page">
+    <div class="remodal" data-remodal-id="modal">
+      <div class="logo"><img src="./images/logo-dark.svg" alt="DataHound logo"></div>
+      <h6 class="title1">We'll be live soon.</h6>
+      <p>In the meantime, give us your email and we'll send you a free trial of DataHound.</p>
+      <div class="formGroup">
+        <label for="project-url" class="formLabel caption">Name</label>
+        <input type="text" id="name" class="js-pasteInput" name="name" placeholder="Jonathan Dog" autocomplete="off">
+      </div>
+      <div class="formGroup">
+        <label for="project-url" class="formLabel caption">E-mail Address</label>
+        <input type="text" id="email" class="js-pasteInput" name="email" placeholder="Click here to add your e-mail" autocomplete="off">
+      </div>
+      <br><br>
+      <button data-remodal-action="confirm" class="button button--plain">Request free trial</button>
+    </div>
+
     <section class="top">
       <img src="./images/logo-header.svg" alt="DataHound logo" class="logo">
-      <button type="button" class="button button--plain">Try for free</button>
-      <div class="fab--botCenter">
-        <span class="caption">Learn More</span>
-        <a href="/" class="fab fab--outline">
-          <i class="mdi mdi-arrow-down"></i>
-        </a>
+      <a type="button" class="button button--plain" href="#modal">Try for free</a>
+      <div class="text">
+        <h2 class="display2">Track what matters on your e-shop,<br />no coding.</h2>
+        <h3 class="title1">Easily get insights on your users' behavior</h3>
+        <a href="#insight" class="trial-link" id="scroll-to-insight">Learn More <i class="mdi mdi-arrow-right"></i></a>
       </div>
     </section>
-    <section class="insight">
+    <section class="insight" id="insight">
       <div class="container">
         <div class="content">
          <h2 class="display2">Easily get insights on your users' behavior</h2>
@@ -35,23 +53,23 @@
       <div class="container">
         <div class="headings">
           <h2 class="display2">We adapt to your business with simplicity</h2>
-          <h3 class="title1">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
+          <h3 class="title1">Collecting customer data shouldn’t require coding skills.<br />DataHound’s point-and-click interface guides you through setting up custom analytics on your e-shop with no technical know-how.</h3>
         </div>
          <div class="cols">
            <div class="col">
              <span class="stepNumber">1</span>
-             <h4 class="title1">Project Type.</h4>
-             <p class="opacity4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, lobortis quis lacinia at, porta ut ex. Nam pellentesque interdum mi id gravida.</p>
+             <h4 class="title1">Project Setup.</h4>
+             <p class="opacity4">We fit the needs of small e-shops to provide a better DataHound experience, adapted to your project's architecture.</p>
            </div>
            <div class="col">
              <span class="stepNumber">2</span>
              <h4 class="title1">Magic Pages.</h4>
-             <p class="opacity4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, lobortis quis lacinia at, porta ut ex. Nam pellentesque interdum mi id gravida.</p>
+             <p class="opacity4">We've worked hard so you won't have to! Special templates were designed by our webanalysts to fit your every need: product pages, shopping cart, conversion funnel. You're all set!</p>
            </div>
            <div class="col">
              <span class="stepNumber">3</span>
-             <h4 class="title1">Step-by-step Setup.</h4>
-             <p class="opacity4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, lobortis quis lacinia at, porta ut ex. Nam pellentesque interdum mi id gravida.</p>
+             <h4 class="title1">Step-by-step Guide.</h4>
+             <p class="opacity4">We'll give you a step-by-step guide to set up the elements you want to track on your page. All you have to do is browse your website, and point and click what matters.</p>
            </div>
          </div>
       </div>
@@ -60,9 +78,9 @@
       <div class="container">
         <img src="./images/lifeguards_screen.jpg" alt="">
         <div class="content">
-          <h2 class="display2">We'll be your lifeguards</h2>
-          <h3 class="title1 opacity">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
-          <h3 class="title1 opacity">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
+          <h2 class="display2">We'll be your watchdogs.</h2>
+          <h3 class="title1 opacity">DataHound will keep an eye on the elements you’ve tracked 24/7 to make sure everything’s well implemented.</h3>
+          <h3 class="title1 opacity">If anything goes wrong, you will get an e-mail alert with a link to a step-by-step guide through an easy fix.</h3>
         </div>
       </div>
     </section>
@@ -70,8 +88,8 @@
       <div class="container">
         <div class="content">
           <h2 class="display2">Weekly/Monthly reports</h2>
-          <h3 class="title1 opacity">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
-          <h3 class="title1 opacity">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
+          <h3 class="title1 opacity">Get insightful reports with key numbers to better adjust your e-shop.</h3>
+          <h3 class="title1 opacity">These can be shared and downloaded as PDF or a web page.</h3>
         </div>
         <img src="./images/report-illu.png" alt="">
       </div>
@@ -80,7 +98,7 @@
       <div class="container">
         <h2 class="display2">Start for free, upgrade later.</h2>
         <h3 class="title1">Lorem ipsum blah blah blah please don't forget to replace this text for the demo.</h3>
-        <a href="" class="trial-link">Try now for free <i class="mdi mdi-arrow-right"></i></a>
+        <a href="#modal" class="trial-link">Try now for free <i class="mdi mdi-arrow-right"></i></a>
         <span class="price">/19€</span>
       </div>
     </section>

@@ -1,6 +1,4 @@
-$(function() {
-	console.log('Hello Tagy Gérec');
-  
+$(function() {  
   if (window.location.href.indexOf("?list") > -1) {
       $('body').addClass('js-set');
       $('.js-allpages').addClass('menuItem1').removeClass('menuItem2');
@@ -132,4 +130,10 @@ $(function() {
         $(this).parent().parent().fadeOut();
     });
   }); 
+
+  $('#scroll-to-insight').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#insight').offset().top});
+    return false;
+  })
 });
