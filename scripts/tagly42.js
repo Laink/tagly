@@ -50,7 +50,7 @@ $(function() {
 		  url: '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js',
 		  dataType: "script"
 		}).done(function() {
-			$('body').append('<aside><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">New Page</span><span class="step-subtitle">No elements tracked yet</span></div></div><div class="step-tracker"><p class="step-number"><span class="current">1</span>/' + elements_tracked + '</p><span class="loader"><span class="progress"></span></span></div><div id="steps"><div><ul class="tiles"><li id="template-product"><a href="javascript:void(0)">Product Page</a></li></ul><p class="secondary">We are now going to get your page template set up by clicking all the important elements step-by-step.</p><a href="javascript:void(0)" class="action" data-id="slick-next">Let\'s do this</a></div><div><div class="centered-content tag" id="tag-title"><h3>Title</h3><p class="secondary">Start by clicking on your title to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-price"><h3>Price</h3><p class="secondary">Click on your "Price" to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-size"><h3>Size</h3><p class="secondary">Click on your size to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-cta"><h3>Add to cart</h3><p class="secondary">Click on your "Add to cart" button to track it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content"><div class="allset"></div><h3>You\'re all set!</h3><p class="secondary">Navigate to another page to track it.</p><a href="' + simpletag_url + 'index.html?list" class="action">Back to all pages</a></div></div></aside>');
+			$('body').append('<aside><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">New Page</span><span class="step-subtitle">No elements measured yet</span></div></div><div class="step-tracker"><p class="step-number"><span class="current">1</span>/' + elements_tracked + '</p><span class="loader"><span class="progress"></span></span></div><div id="steps"><div><ul class="tiles"><li id="template-product"><a href="javascript:void(0)">Product Page</a></li></ul><p class="secondary">We are now going to get your page template set up by clicking all the important elements step-by-step.</p><a href="javascript:void(0)" class="action" data-id="slick-next">Let\'s do this</a></div><div><div class="centered-content tag" id="tag-title"><h3>Title</h3><p class="secondary">Start by clicking on your title to measure it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-price"><h3>Price</h3><p class="secondary">Click on your "Price" to measure it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-size"><h3>Size</h3><p class="secondary">Click on your size to measure it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content tag" id="tag-cta"><h3>Add to cart</h3><p class="secondary">Click on your "Add to cart" button to measure it.</p><span class="skip" data-id="slick-next">Skip</span></div></div><div><div class="centered-content"><div class="allset"></div><h3>You\'re all set!</h3><p class="secondary">Navigate to another page to measure it.</p><a href="' + simpletag_url + 'index.html?list" class="action">Back to all pages</a></div></div></aside>');
 			$('#steps').slick({
 				infinite: false,
 				draggable: false,
@@ -121,7 +121,7 @@ $(function() {
 					$('.step-tracker .current').text('2');
 					$('.step-tracker .loader .progress').width('calc(100% / ' + elements_tracked + ' * 2)');
 					$('.header .step-subtitle').fadeOut('fast', function() {
-						$(this).text('1 element tracked');
+						$(this).text('1 element measured');
 						$(this).fadeIn();
 					});
 				}
@@ -136,7 +136,7 @@ $(function() {
 					$('.step-tracker .current').text('3');
 					$('.step-tracker .loader .progress').width('calc(100% / ' + elements_tracked + ' * 3)');
 					$('.header .step-subtitle').fadeOut('fast', function() {
-						$(this).text('2 elements tracked');
+						$(this).text('2 elements measured');
 						$(this).fadeIn();
 					});
 				}
@@ -147,7 +147,7 @@ $(function() {
 					$('.step-tracker .current').text('4');
 					$('.step-tracker .loader .progress').width('calc(100% / ' + elements_tracked + ' * 4)');
 					$('.header .step-subtitle').fadeOut('fast', function() {
-						$(this).text('3 elements tracked');
+						$(this).text('3 elements measured');
 						$(this).fadeIn();
 					});
 				}
@@ -159,7 +159,7 @@ $(function() {
 
 					$('.step-tracker').fadeOut('fast');
 					$('.header .step-subtitle').fadeOut('fast', function() {
-						$(this).text('4 elements tracked');
+						$(this).text('4 elements measured');
 						$(this).fadeIn();
 					});
 				}
@@ -212,7 +212,7 @@ $(function() {
 		  url: '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js',
 		  dataType: "script"
 		}).done(function() {
-			$('body').append('<aside><a href="javascript:void(0)" data-id="slick-next" class="fab fab--plain fab--bottomRight"><i class="mdi mdi-plus"></i></a><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">Product Page</span><span class="step-subtitle">8 elements tracked</span></div></div><div id="steps" class="edit"><div><div class="templates-list"><h3>Elements tracked</h3><ul class="list"><li><div class="item_infos"><div class="icon" id="tag-title"></div><span class="label">Title</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Tracked</span></div></li><li><div class="item_infos"><div class="icon" id="tag-price"></div><span class="label">Price</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Tracked</span></div></li><li><div class="item_infos"><div class="icon" id="tag-size"></div><span class="label">Size</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Tracked</span></div></li><li><div class="item_infos"><div class="icon" id="tag-cta"></div><span class="label">Call to action</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Tracked</span></div></li></ul></div></div><div><div class="templates-list"><h3>Track a custom element</h3><p class="secondary">Point & click the element of your website you want to track.</p><hr><div class="formGroup"><label for="project-url" class="formLabel caption">Element name</label><input type="text" id="custom-tag-name" placeholder="Name your element"></div><div class="formGroup"><div class="select js-select"><div class="select-label js-select-label"><p class="caption select-labelLabel">Event label</p><p class="select-labelTxt">Select an event label</p><i class="mdi mdi-close js-select-close"></i><i class="mdi mdi-chevron-down"></i></div><div class="select-options"><p class="select-option select-option--cat opacity">E-commerce</p><p class="select-option">Product title</p><p class="select-option">Product price</p><p class="select-option">Product size</p><p class="select-option">Product color</p><p class="select-option">Call to action</p><p class="select-option" data-tag="shipping">Shipping options</p><p class="select-option" data-tag="wishlist">Wishlist button</p><p class="select-option" data-tag="cross">Cross-sell product</p><p class="select-option">Size guide</p><p class="select-option select-option--cat opacity">Social</p><p class="select-option" data-tag="instagram">Instagram picture</p><p class="select-option">Facebook picture</p><p class="select-option">Share button</p><p class="select-option select-option--cat opacity">Others</p><p class="select-option" data-tag="tab">Tabs</p></div></div></div><button id="confirm-custom-tag">OK</button></div></div></aside>');
+			$('body').append('<aside><a href="javascript:void(0)" data-id="slick-next" class="fab fab--plain fab--bottomRight"><i class="mdi mdi-plus"></i></a><div class="header"><i class="mdi mdi-arrow-left" data-id="slick-prev"></i><div class="step-infos"><span class="step-title">Product Page</span><span class="step-subtitle">8 elements measured</span></div></div><div id="steps" class="edit"><div><div class="templates-list"><h3>Elements measured</h3><ul class="list"><li><div class="item_infos"><div class="icon" id="tag-title"></div><span class="label">Title</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Measured</span></div></li><li><div class="item_infos"><div class="icon" id="tag-price"></div><span class="label">Price</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Measured</span></div></li><li><div class="item_infos"><div class="icon" id="tag-size"></div><span class="label">Size</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Measured</span></div></li><li><div class="item_infos"><div class="icon" id="tag-cta"></div><span class="label">Call to action</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Measured</span></div></li></ul></div></div><div><div class="templates-list"><h3>Measure a custom element</h3><p class="secondary">Point & click the element of your website you want to measure.</p><hr><div class="formGroup"><label for="project-url" class="formLabel caption">Element name</label><input type="text" id="custom-tag-name" placeholder="Name your element"></div><div class="formGroup"><div class="select js-select"><div class="select-label js-select-label"><p class="caption select-labelLabel">Event label</p><p class="select-labelTxt">Select an event label</p><i class="mdi mdi-close js-select-close"></i><i class="mdi mdi-chevron-down"></i></div><div class="select-options"><p class="select-option select-option--cat opacity">E-commerce</p><p class="select-option">Product title</p><p class="select-option">Product price</p><p class="select-option">Product size</p><p class="select-option">Product color</p><p class="select-option">Call to action</p><p class="select-option" data-tag="shipping">Shipping options</p><p class="select-option" data-tag="wishlist">Wishlist button</p><p class="select-option" data-tag="cross">Cross-sell product</p><p class="select-option">Size guide</p><p class="select-option select-option--cat opacity">Social</p><p class="select-option" data-tag="instagram">Instagram picture</p><p class="select-option">Facebook picture</p><p class="select-option">Share button</p><p class="select-option select-option--cat opacity">Others</p><p class="select-option" data-tag="tab">Tabs</p></div></div></div><button id="confirm-custom-tag">OK</button></div></div></aside>');
 			$('#steps').slick({
 				infinite: false,
 				draggable: false,
@@ -278,7 +278,7 @@ $(function() {
 				$('#steps').fadeTo('fast', 0, function() {
 					$('.fab').fadeTo('fast', 1);
 					$(this).slick('slickPrev');
-					$('ul.list').append('<li><div class="item_infos"><div class="icon" id="tag-' + selected_tag + '"></div><span class="label">' + selected_tag_title + '</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Tracked</span></div></li>');
+					$('ul.list').append('<li><div class="item_infos"><div class="icon" id="tag-' + selected_tag + '"></div><span class="label">' + selected_tag_title + '</span></div><div class="item_state"><span class="state_label">Status</span><span class="state_value">Measured</span></div></li>');
 					setTimeout(function(){
 						$('#steps').fadeTo('fast', 1);
 					}, 100);
