@@ -213,6 +213,7 @@
 	.reports{
 		background: #fff;
 		font-size: 0;
+		overflow: hidden;
 		.container{
      padding-bottom: 0; 
     }
@@ -223,6 +224,8 @@
       display: inline-block;
       vertical-align: top;
       width: calc(100% - 424px);
+			position: relative;
+			top: 9px;
     }
 		.content{
       display: inline-block;
